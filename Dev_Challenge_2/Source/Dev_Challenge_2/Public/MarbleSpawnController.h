@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "MarbleForceController.h"
 #include "Marble.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -28,10 +29,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MarbleSpawn")
 		void GetNewMarble();
 
-	/*
 	UPROPERTY(EditAnywhere)
-		AForceController *forceController;
-	*/
+		AMarbleForceController *forceController;
 
 	AMarble * currentMarble;
 

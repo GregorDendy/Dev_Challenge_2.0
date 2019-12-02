@@ -15,12 +15,14 @@ public:
 	// Sets default values for this actor's properties
 	AMarble();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+public:
+	//Ball can only be fired when in Ready state
+	enum MarbleState
+	{
+		READY,
+		CHARGING,
+		FIRED,
+	};
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+	MarbleState marbleState;
 };

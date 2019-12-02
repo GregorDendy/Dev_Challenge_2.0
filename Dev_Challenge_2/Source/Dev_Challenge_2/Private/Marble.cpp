@@ -8,20 +8,5 @@ AMarble::AMarble()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	marbleState = MarbleState::READY;
 }
-
-// Called when the game starts or when spawned
-void AMarble::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void AMarble::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-

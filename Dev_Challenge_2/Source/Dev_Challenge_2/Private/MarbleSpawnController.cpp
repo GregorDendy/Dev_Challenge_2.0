@@ -22,7 +22,10 @@ void AMarbleSpawnController::SpawnMarble()
 	FActorSpawnParameters SpawnParams;
 	FRotator rot{ 0 };
 	currentMarble = GetWorld()->SpawnActor<AMarble>(ActorToSpawn, SpawnLocation, rot, SpawnParams);
-	//forceController->SetCurrentMarble(currentMarble);
+	if (currentMarble != nullptr && forceController != nullptr)
+	{
+		forceController->SetCurrentMarble(currentMarble);
+	}
 }
 
 void AMarbleSpawnController::DestroyMarble()
@@ -36,7 +39,7 @@ void AMarbleSpawnController::DestroyMarble()
 //Remove old marble and get new one
 void AMarbleSpawnController::GetNewMarble()
 {
-	//if (currentMarble->marbleState == currentMarble->FIRED)
+	if (currentMarble->marbleState == currentMarble->FIRED)
 	{
 		DestroyMarble();
 		SpawnMarble();
