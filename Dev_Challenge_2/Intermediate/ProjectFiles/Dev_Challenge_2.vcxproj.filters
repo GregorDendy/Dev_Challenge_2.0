@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Dev_Challenge_2.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{5A77FEE5-5520-4E9E-A5C7-C2F017C49B5B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Dev_Challenge_2.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Dev_Challenge_2Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FB1E7095-5678-4E9E-8FF6-340850725618}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\Android">
+      <UniqueIdentifier>{C999B161-4B5F-46B1-8674-2DAD7283E296}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Android\AndroidEngine.ini">
+      <Filter>Config\Android</Filter>
+    </None>
+    <Filter Include="Config\IOS">
+      <UniqueIdentifier>{AF34DC05-CE1B-4A02-8767-F6B9785671AC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\IOS\IOSEngine.ini">
+      <Filter>Config\IOS</Filter>
+    </None>
+    <Filter Include="Config\Linux">
+      <UniqueIdentifier>{EDFBB1C6-291F-40B4-8BB4-B4AD3FD41783}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Linux\LinuxEngine.ini">
+      <Filter>Config\Linux</Filter>
+    </None>
+    <Filter Include="Config\Mac">
+      <UniqueIdentifier>{C63E915D-EC77-43C3-B226-64772FB8E59C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Mac\MacEngine.ini">
+      <Filter>Config\Mac</Filter>
+    </None>
+    <Filter Include="Config\PS4">
+      <UniqueIdentifier>{4A39602C-2564-43D3-9FB4-7921079AFE66}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\PS4\PS4Engine.ini">
+      <Filter>Config\PS4</Filter>
+    </None>
+    <Filter Include="Config\Switch">
+      <UniqueIdentifier>{3B4FF8A6-CA14-47CC-8D53-3D480326EC8F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Switch\SwitchEngine.ini">
+      <Filter>Config\Switch</Filter>
+    </None>
+    <Filter Include="Config\Windows">
+      <UniqueIdentifier>{015E7992-D48E-49BB-9B1F-D591501AE89B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Windows\WindowsEngine.ini">
+      <Filter>Config\Windows</Filter>
+    </None>
+    <Filter Include="Config\XboxOne">
+      <UniqueIdentifier>{07E72081-F61B-4015-8648-78AE7655D68D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\XboxOne\XboxOneEngine.ini">
+      <Filter>Config\XboxOne</Filter>
+    </None>
+    <Filter Include="Source\Dev_Challenge_2">
+      <UniqueIdentifier>{8A1BA34F-EDE0-4757-A21B-1B0E44A51E1A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Dev_Challenge_2\Dev_Challenge_2.Build.cs">
+      <Filter>Source\Dev_Challenge_2</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Dev_Challenge_2\Dev_Challenge_2.cpp">
+      <Filter>Source\Dev_Challenge_2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Dev_Challenge_2\Dev_Challenge_2.h">
+      <Filter>Source\Dev_Challenge_2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Dev_Challenge_2\Dev_Challenge_2GameModeBase.cpp">
+      <Filter>Source\Dev_Challenge_2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Dev_Challenge_2\Dev_Challenge_2GameModeBase.h">
+      <Filter>Source\Dev_Challenge_2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
