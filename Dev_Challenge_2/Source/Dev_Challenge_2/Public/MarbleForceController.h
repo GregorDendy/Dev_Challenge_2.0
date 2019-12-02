@@ -25,6 +25,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Ball")
 		bool CheckIfClickingMarble();
 
+	UFUNCTION(BlueprintCallable, Category = "Ball")
+		void SetPowerMultiplier(float value);
+
 	void SetCurrentMarble(AMarble *newMarble);
 
 private:

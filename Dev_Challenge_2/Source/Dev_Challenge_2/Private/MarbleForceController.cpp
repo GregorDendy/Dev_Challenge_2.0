@@ -93,6 +93,11 @@ bool AMarbleForceController::CheckIfClickingMarble()
 	return false;
 }
 
+void AMarbleForceController::SetPowerMultiplier(float value)
+{
+	PowerMultiplier = value;
+}
+
 //Stores the current marble in scene so it can be interacted with
 void AMarbleForceController::SetCurrentMarble(AMarble *newMarble)
 {

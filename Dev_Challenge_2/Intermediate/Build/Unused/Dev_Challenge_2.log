@@ -1,19 +1,6 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Gregor\Documents\Dev_Challenge_2.0).
   Parsing headers for Dev_Challenge_2Editor
     Running UnrealHeaderTool "E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Dev_Challenge_2.uproject" "E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\Dev_Challenge_2Editor\Development\Dev_Challenge_2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for Dev_Challenge_2Editor in 7.8231007 seconds
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 9 actions with 4 processes...
-    [1/9] Marble.cpp
-    [2/9] MarbleSpawnController.cpp
-    [3/9] Marble.gen.cpp
-    [4/9] MarbleForceController.gen.cpp
-    [5/9] MarbleSpawnController.gen.cpp
-    [6/9] MarbleForceController.cpp
-    [7/9] UE4Editor-Dev_Challenge_2.lib
-       Creating library E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.lib and object E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.exp
-    [8/9] UE4Editor-Dev_Challenge_2.dll
-       Creating library E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.suppressed.lib and object E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.suppressed.exp
-    [9/9] Dev_Challenge_2Editor.target
-  Total time in Parallel executor: 126.17 seconds
-  Total execution time: 135.34 seconds
+  Reflection code generated for Dev_Challenge_2Editor in 7.9682712 seconds
+  Target is up to date
+  Total execution time: 9.03 seconds

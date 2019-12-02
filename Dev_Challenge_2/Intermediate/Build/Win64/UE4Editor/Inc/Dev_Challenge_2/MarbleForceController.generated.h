@@ -15,6 +15,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleForceController_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetPowerMultiplier) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetPowerMultiplier(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCheckIfClickingMarble) \
 	{ \
 		P_FINISH; \
@@ -33,6 +42,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleForceController_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetPowerMultiplier) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetPowerMultiplier(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCheckIfClickingMarble) \
 	{ \

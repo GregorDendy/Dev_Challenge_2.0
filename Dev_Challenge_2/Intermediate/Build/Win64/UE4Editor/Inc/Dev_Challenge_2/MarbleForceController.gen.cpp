@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleForceController() {}
 	UPackage* Z_Construct_UPackage__Script_Dev_Challenge_2();
 	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleForceController_CheckIfClickingMarble();
 	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleForceController_HitBall();
+	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier();
 	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_AMarble_NoRegister();
 // End Cross Module References
 	void AMarbleForceController::StaticRegisterNativesAMarbleForceController()
@@ -27,6 +28,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleForceController() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CheckIfClickingMarble", &AMarbleForceController::execCheckIfClickingMarble },
 			{ "HitBall", &AMarbleForceController::execHitBall },
+			{ "SetPowerMultiplier", &AMarbleForceController::execSetPowerMultiplier },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -91,6 +93,39 @@ void EmptyLinkFunctionForGeneratedCodeMarbleForceController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics
+	{
+		struct MarbleForceController_eventSetPowerMultiplier_Parms
+		{
+			float value;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MarbleForceController_eventSetPowerMultiplier_Parms, value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::NewProp_value,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Ball" },
+		{ "ModuleRelativePath", "Public/MarbleForceController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMarbleForceController, nullptr, "SetPowerMultiplier", nullptr, nullptr, sizeof(MarbleForceController_eventSetPowerMultiplier_Parms), Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AMarbleForceController_NoRegister()
 	{
 		return AMarbleForceController::StaticClass();
@@ -121,6 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleForceController() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMarbleForceController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMarbleForceController_CheckIfClickingMarble, "CheckIfClickingMarble" }, // 2359583499
 		{ &Z_Construct_UFunction_AMarbleForceController_HitBall, "HitBall" }, // 2958383107
+		{ &Z_Construct_UFunction_AMarbleForceController_SetPowerMultiplier, "SetPowerMultiplier" }, // 206982467
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarbleForceController_Statics::Class_MetaDataParams[] = {
@@ -173,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleForceController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMarbleForceController, 547111445);
+	IMPLEMENT_CLASS(AMarbleForceController, 938597059);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<AMarbleForceController>()
 	{
 		return AMarbleForceController::StaticClass();
