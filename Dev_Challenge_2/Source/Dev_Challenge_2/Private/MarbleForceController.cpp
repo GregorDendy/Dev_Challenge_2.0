@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Math/UnrealMathUtility.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
@@ -58,8 +59,12 @@ void AMarbleForceController::HitBall()
 	{
 		FVector	direction = CalculateDirection();
 		float power = FMath::Clamp<float>(direction.Size()*PowerMultiplier, 1, 1000);
-		FVector forceToAdd = direction.GetSafeNormal() * power;
-		forceToAdd.Z = 0;
+		FVector forceToAdd = direction/*.GetSafeNormal()*/ * power;
+		//forceToAdd.Z = 0;
+		float newHypotenuse = forceToAdd.X;
+		forceToAdd.Z = (FMath::Sin(FMath::DegreesToRadians(60.0f/*temp value*/))) * newHypotenuse;
+		forceToAdd.X = (FMath::Cos(FMath::DegreesToRadians(60.0f/*temp value*/))) * newHypotenuse;
+		
 		if (meshComp != nullptr)
 		{
 			meshComp->AddImpulse(forceToAdd * meshComp->GetMass());
