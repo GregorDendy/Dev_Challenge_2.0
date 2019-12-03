@@ -28,6 +28,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Ball")
 		void SetPowerMultiplier(float value);
 
+	UFUNCTION(BlueprintCallable, Category = "Ball")
+		void SetFireAngle(float value);
+
 	void SetCurrentMarble(AMarble *newMarble);
 
 private:
@@ -35,7 +38,10 @@ private:
 		AMarble* marble;
 
 	UPROPERTY(EditAnywhere, Category = Marble)
-		float PowerMultiplier = 1;
+		float PowerMultiplier = 1.0f;
+
+	UPROPERTY(EditAnywhere, Category = Marble)
+		float FireAngle = 45.0f;
 
 	UStaticMeshComponent *meshComp;
 	FVector cameraLocation;

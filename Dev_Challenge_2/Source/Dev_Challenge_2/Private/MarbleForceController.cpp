@@ -60,10 +60,11 @@ void AMarbleForceController::HitBall()
 		FVector	direction = CalculateDirection();
 		float power = FMath::Clamp<float>(direction.Size()*PowerMultiplier, 1, 1000);
 		FVector forceToAdd = direction/*.GetSafeNormal()*/ * power;
-		//forceToAdd.Z = 0;
+
+		//
 		float newHypotenuse = forceToAdd.X;
-		forceToAdd.Z = (FMath::Sin(FMath::DegreesToRadians(60.0f/*temp value*/))) * newHypotenuse;
-		forceToAdd.X = (FMath::Cos(FMath::DegreesToRadians(60.0f/*temp value*/))) * newHypotenuse;
+		forceToAdd.Z = (FMath::Sin(FMath::DegreesToRadians(FireAngle))) * newHypotenuse;
+		forceToAdd.X = (FMath::Cos(FMath::DegreesToRadians(FireAngle))) * newHypotenuse;
 		
 		if (meshComp != nullptr)
 		{
@@ -101,6 +102,11 @@ bool AMarbleForceController::CheckIfClickingMarble()
 void AMarbleForceController::SetPowerMultiplier(float value)
 {
 	PowerMultiplier = value;
+}
+
+void AMarbleForceController::SetFireAngle(float value)
+{
+	FireAngle = value;
 }
 
 //Stores the current marble in scene so it can be interacted with
