@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Components/StaticMeshComponent.h"
 #include "MarbleForceController.h"
 #include "Marble.h"
 #include "CoreMinimal.h"

@@ -88,7 +88,9 @@ bool AMarbleForceController::CheckIfClickingMarble()
 		bool ClickedMarble = hitActor->ActorHasTag("marble");
 		if (ClickedMarble && marble != nullptr)
 		{
-			meshComp = Cast<UStaticMeshComponent>(marble->GetRootComponent());
+			//TArray<UStaticMeshComponent> StaticComps;
+			//hitActor->GetComponents<UStaticMeshComponent>(StaticComps);
+			meshComp = (marble->FindComponentByClass<UStaticMeshComponent>());
 			if (marble->marbleState == marble->READY)
 			{
 				marble->marbleState = marble->CHARGING;

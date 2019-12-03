@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Components/SphereComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Marble.generated.h"
@@ -14,6 +15,10 @@ class DEV_CHALLENGE_2_API AMarble : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AMarble();
+	virtual void BeginPlay();
+
+	UPROPERTY(/*EditAnywhere, Category = MarbleMesh*/)
+	UStaticMeshComponent *staticMeshComp;
 
 public:
 	//Ball can only be fired when in Ready state
@@ -25,4 +30,15 @@ public:
 	};
 
 	MarbleState marbleState;
+
+	/*
+	UPROPERTY()
+		USceneComponent * Root;
+
+	UPROPERTY()
+		USphereComponent *SphereComponent;
+	*/
+
+	UFUNCTION()
+		void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
 };
