@@ -29,6 +29,9 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	int32 CurrentScore;
 	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool RoundRunning;
+
 	UFUNCTION()
 	void EndRound();
 
@@ -37,5 +40,6 @@ public:
 
 	void IncreaseScore(int32 Value);
 
+	UFUNCTION(BlueprintCallable)
 	void StartTimer();
 };

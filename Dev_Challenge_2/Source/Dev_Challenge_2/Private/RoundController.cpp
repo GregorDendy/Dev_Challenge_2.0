@@ -5,7 +5,7 @@
 #include "RoundController.h"
 
 // Sets default values
-ARoundController::ARoundController() : CurrentScore(0)
+ARoundController::ARoundController() : CurrentScore(0), RoundRunning(false)//change to false if starting with ui
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -39,14 +39,15 @@ void ARoundController::IncreaseScore(int32 Value)
 
 void ARoundController::StartTimer()
 {
+	RoundRunning = true;
 	GetWorldTimerManager().SetTimer(RoundTimerHandle, this, &ARoundController::EndRound, RoundTimer, false);
 	GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Red, "Timer Started");
-	IncreaseScore(10); //remove
 }
 
 void ARoundController::EndRound()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Red, "Timer Ended");
+	RoundRunning = false;
 }
 
 

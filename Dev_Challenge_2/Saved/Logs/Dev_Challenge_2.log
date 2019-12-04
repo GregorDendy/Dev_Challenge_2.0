@@ -1,4 +1,4 @@
-﻿Log file open, 12/04/19 18:45:44
+﻿Log file open, 12/04/19 19:15:44
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: Dev_Challenge_2
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.383184
+LogStats: Stats thread started at 0.212318
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -158,468 +158,795 @@ LogInit: Presizing for max 16777216 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.12.04-18.45.45:464][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.12.04-18.45.45:464][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:465][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.12.04-18.45.45:465][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.12.04-18.45.45:466][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.12.04-18.45.45:467][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.12.04-18.45.45:467][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.12.04-18.45.45:467][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.12.04-18.45.45:467][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:467][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:496][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:496][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.12.04-18.45.45:496][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.12.04-18.45.45:496][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:496][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.12.04-18.45.45:496][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:497][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.12.04-18.45.45:497][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.12.04-18.45.45:498][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.12.04-18.45.45:498][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.12.04-18.45.45:498][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.12.04-18.45.45:499][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.12.04-18.45.45:500][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.12.04-18.45.45:502][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.12.04-18.45.45:503][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.12.04-18.45.45:504][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.12.04-18.45.45:504][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.12.04-18.45.45:505][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.12.04-18.45.45:505][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.12.04-18.45.45:505][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.12.04-18.45.45:506][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.12.04-18.45.45:506][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.12.04-18.45.45:506][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.12.04-18.45.45:506][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.12.04-18.45.45:507][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.12.04-18.45.45:508][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.12.04-18.45.45:509][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.12.04-18.45.45:510][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.12.04-18.45.45:510][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:510][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.12.04-18.45.45:510][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.12.04-18.45.45:510][  0]LogInit: Selected Device Profile: [Windows]
-[2019.12.04-18.45.45:510][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.12.04-18.45.45:514][  0]LogHAL: Display: Platform has ~ 8 GB [8463040512 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.12.04-18.45.45:514][  0]LogInit: Going up to parent DeviceProfile []
-[2019.12.04-18.45.45:515][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:515][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.12.04-18.45.45:515][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.12.04-18.45.45:515][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:516][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.12.04-18.45.45:516][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:516][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.12.04-18.45.45:516][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.12.04-18.45.45:517][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.12.04-18.45.45:518][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.12.04-18.45.45:519][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.12.04-18.45.45:520][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.12.04-18.45.45:521][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.12.04-18.45.45:522][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.12.04-18.45.45:523][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.12.04-18.45.45:523][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2019.12.04-18.45.45:523][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
-[2019.12.04-18.45.45:523][  0]LogInit: Computer: GREGOR-PC
-[2019.12.04-18.45.45:523][  0]LogInit: User: Gregor
-[2019.12.04-18.45.45:523][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.12.04-18.45.45:523][  0]LogInit: High frequency timer resolution =3.312642 MHz
-[2019.12.04-18.45.45:524][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2019.12.04-18.45.45:524][  0]LogMemory: Platform Memory Stats for Windows
-[2019.12.04-18.45.45:524][  0]LogMemory: Process Physical Memory: 105.23 MB used, 105.23 MB peak
-[2019.12.04-18.45.45:524][  0]LogMemory: Process Virtual Memory: 92.75 MB used, 92.75 MB peak
-[2019.12.04-18.45.45:524][  0]LogMemory: Physical Memory: 4831.00 MB used,  3239.99 MB free, 8070.98 MB total
-[2019.12.04-18.45.45:524][  0]LogMemory: Virtual Memory: 4680.12 MB used,  134213048.00 MB free, 134217728.00 MB total
-[2019.12.04-18.45.45:531][  0]LogWindows: WindowsPlatformFeatures enabled
-[2019.12.04-18.45.45:660][  0]LogInit: Using OS detected language (en-GB).
-[2019.12.04-18.45.45:660][  0]LogInit: Using OS detected locale (en-GB).
-[2019.12.04-18.45.45:661][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2019.12.04-18.45.45:881][  0]LogInit: Setting process to per monitor DPI aware
-[2019.12.04-18.45.45:974][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.12.04-18.45.45:974][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.12.04-18.45.46:423][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2019.12.04-18.45.46:423][  0]LogD3D11RHI: D3D11 adapters:
-[2019.12.04-18.45.46:502][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2019.12.04-18.45.46:502][  0]LogD3D11RHI:       8088/0/4035 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
-[2019.12.04-18.45.46:522][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2019.12.04-18.45.46:522][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2019.12.04-18.45.46:528][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.12.04-18.45.46:528][  0]LogD3D11RHI:       0/0/4035 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.12.04-18.45.46:528][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.12.04-18.45.46:537][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.12.04-18.45.46:537][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2019.12.04-18.45.46:537][  0]LogWindows: EnumDisplayDevices:
-[2019.12.04-18.45.46:537][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2019.12.04-18.45.46:538][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
-[2019.12.04-18.45.46:538][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
-[2019.12.04-18.45.46:539][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.12.04-18.45.46:539][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2019.12.04-18.45.46:540][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2019.12.04-18.45.46:540][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2019.12.04-18.45.46:540][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2019.12.04-18.45.46:541][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2019.12.04-18.45.46:541][  0]LogD3D11RHI:   Driver Version: 417.71 (internal:25.21.14.1771, unified:417.71)
-[2019.12.04-18.45.46:541][  0]LogD3D11RHI:      Driver Date: 1-11-2019
-[2019.12.04-18.45.46:541][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
-[2019.12.04-18.45.46:596][  0]LogD3D11RHI: Async texture creation enabled
-[2019.12.04-18.45.46:616][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.12.04-18.45.47:109][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
-[2019.12.04-18.45.47:120][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
-[2019.12.04-18.45.47:132][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
-[2019.12.04-18.45.47:143][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
-[2019.12.04-18.45.47:154][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
-[2019.12.04-18.45.47:165][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
-[2019.12.04-18.45.47:176][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
-[2019.12.04-18.45.47:187][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
-[2019.12.04-18.45.47:194][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
-[2019.12.04-18.45.47:231][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
-[2019.12.04-18.45.47:232][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
-[2019.12.04-18.45.47:235][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
-[2019.12.04-18.45.47:262][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
-[2019.12.04-18.45.47:262][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
-[2019.12.04-18.45.47:279][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
-[2019.12.04-18.45.47:279][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
-[2019.12.04-18.45.47:290][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
-[2019.12.04-18.45.47:299][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
-[2019.12.04-18.45.47:308][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
-[2019.12.04-18.45.47:320][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
-[2019.12.04-18.45.47:350][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
-[2019.12.04-18.45.47:350][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
-[2019.12.04-18.45.47:350][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.12.04-18.45.47:369][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2019.12.04-18.45.47:468][  0]LogShaderCompilers: Guid format shader working directory is -22 characters bigger than the processId version (../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Intermediate/Shaders/WorkingDirectory/16172/).
-[2019.12.04-18.45.47:469][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gregor/AppData/Local/Temp/UnrealShaderWorkingDir/C00BD4034CD0D69C71C1589ABA6500A2/'.
-[2019.12.04-18.45.47:471][  0]LogXGEController: Cleaning working directory: C:/Users/Gregor/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.12.04-18.45.47:471][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.12.04-18.45.47:471][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.12.04-18.45.47:471][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.12.04-18.45.48:147][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: Loaded boot cache 0.09s 76MB C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.12.04-18.45.48:237][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.12.04-18.45.48:249][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.12.04-18.45.48:249][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.12.04-18.45.48:250][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.12.04-18.45.48:252][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gregor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.12.04-18.45.48:252][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.12.04-18.45.48:252][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.12.04-18.45.48:273][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.12.04-18.45.48:275][  0]LogSlate: Using FreeType 2.6.0
-[2019.12.04-18.45.48:276][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.12.04-18.45.48:361][  0]LogAssetRegistry: FAssetRegistry took 0.0049 seconds to start up
-[2019.12.04-18.45.48:651][  0]LogInit: Selected Device Profile: [Windows]
-[2019.12.04-18.45.48:839][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.12.04-18.45.48:839][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2019.12.04-18.45.48:839][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.12.04-18.45.48:839][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2019.12.04-18.45.48:839][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2019.12.04-18.45.48:852][  0]LogNetVersion: Dev_Challenge_2 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 144850394)
-[2019.12.04-18.45.49:402][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.054225 seconds
-[2019.12.04-18.45.49:410][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
-[2019.12.04-18.45.49:410][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
-[2019.12.04-18.45.49:410][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.12.04-18.45.50:688][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.12.04-18.45.50:694][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.12.04-18.45.50:819][  0]SourceControl: Source control is disabled
-[2019.12.04-18.45.50:819][  0]SourceControl: Source control is disabled
-[2019.12.04-18.45.50:824][  0]SourceControl: Source control is disabled
-[2019.12.04-18.45.50:828][  0]SourceControl: Source control is disabled
-[2019.12.04-18.45.51:007][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.12.04-18.45.51:564][  0]LogOcInput: OculusInput pre-init called
-[2019.12.04-18.45.52:472][  0]LogEngine: Initializing Engine...
-[2019.12.04-18.45.52:529][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2019.12.04-18.45.52:531][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2019.12.04-18.45.52:783][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.12.04-18.45.52:799][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.12.04-18.45.52:995][  0]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2019.12.04-18.45.53:022][  0]LogInit: FAudioDevice initialized.
-[2019.12.04-18.45.53:022][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.12.04-18.45.53:189][  0]LogDerivedDataCache: Saved boot cache 0.17s 76MB C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
-[2019.12.04-18.45.53:209][  0]LogInit: Texture streaming: Enabled
-[2019.12.04-18.45.53:238][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.12.04-18.45.53:239][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={9B582F1A-4A13-25BE-EA06-C2972F611AF8}
-[2019.12.04-18.45.53:239][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2019.12.04-18.45.53:240][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2019.12.04-18.45.53:312][  0]LogInit: Transaction tracking system initialized
-[2019.12.04-18.45.53:360][  0]BlueprintLog: New page: Editor Load
-[2019.12.04-18.45.53:469][  0]LocalizationService: Localization service is disabled
-[2019.12.04-18.45.53:759][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/' took 0.00s
-[2019.12.04-18.45.53:759][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.12.04-18.45.53:760][  0]LogCook: Display: Mobile HDR setting 1
-[2019.12.04-18.45.54:041][  0]SourceControl: Source control is disabled
-[2019.12.04-18.45.54:041][  0]Cmd: MAP LOAD FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.12.04-18.45.54:042][  0]LightingResults: New page: Lighting Build
-[2019.12.04-18.45.54:044][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2019.12.04-18.45.54:044][  0]MapCheck: New page: Map Check
-[2019.12.04-18.45.54:044][  0]LightingResults: New page: Lighting Build
-[2019.12.04-18.45.54:068][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
-[2019.12.04-18.45.54:132][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:132][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:132][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:133][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:174][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:174][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
-[2019.12.04-18.45.54:175][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:175][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
-[2019.12.04-18.45.54:175][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:176][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
-[2019.12.04-18.45.54:176][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
-[2019.12.04-18.45.54:176][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
-[2019.12.04-18.45.54:202][  0]LogAIModule: Creating AISystem for world MainMap
-[2019.12.04-18.45.54:208][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.12.04-18.45.54:234][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
-[2019.12.04-18.45.54:234][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.12.04-18.45.54:234][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.103ms to complete.
-[2019.12.04-18.45.54:234][  0]LogFileHelpers: Loading map 'MainMap' took 0.193
-[2019.12.04-18.45.54:413][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.45.54:420][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.45.54:427][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.45.54:436][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.45.54:447][  0]LogCollectionManager: Loaded 0 collections in 0.001891 seconds
-[2019.12.04-18.45.54:460][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Collections/' took 0.00s
-[2019.12.04-18.45.54:460][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Developers/Gregor/Collections/' took 0.00s
-[2019.12.04-18.45.54:460][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Collections/' took 0.00s
-[2019.12.04-18.45.54:460][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2019.12.04-18.45.54:470][  0]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2868 classes and 683 folders.
-[2019.12.04-18.45.54:476][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2019.12.04-18.45.54:564][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2019.12.04-18.45.54:574][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2019.12.04-18.45.54:661][  0]LogSlate: Took 0.000417 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.12.04-18.45.54:667][  0]LogSlate: Took 0.000270 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.12.04-18.45.54:673][  0]LogSlate: Took 0.000323 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.12.04-18.45.54:675][  0]LogSlate: Took 0.000248 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2019.12.04-18.45.54:790][  0]LogRenderer: Reallocating scene render targets to support 1208x640 Format 10 NumSamples 1 (Frame:1).
-[2019.12.04-18.45.54:843][  0]LogSlate: Took 0.000286 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.12.04-18.45.54:942][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2019.12.04-18.45.54:943][  0]LogLoad: (Engine Initialization) Total time: 12.88 seconds
-[2019.12.04-18.45.54:943][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.12.04-18.45.54:953][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.12.04-18.45.55:023][  0]LogAssetRegistry: Asset discovery search completed in 6.6651 seconds
-[2019.12.04-18.45.55:028][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
-[2019.12.04-18.45.55:028][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000388 seconds (updated 0 objects)
-[2019.12.04-18.45.55:029][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.12.04-18.45.55:038][  0]LogSlate: FSceneViewport::OnFocusLost() reason 5
-[2019.12.04-18.46.08:489][ 26]LogSlate: Took 0.000392 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.12.04-18.46.08:520][ 26]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2019.12.04-18.46.08:547][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
-[2019.12.04-18.46.08:675][ 26]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap4BD1403F490F48A3C9093C9026D42C02.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap'
-[2019.12.04-18.46.08:716][ 26]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap_BuiltData" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset" SILENT=true
-[2019.12.04-18.46.08:744][ 26]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap_BuiltDataBB6EAF454C8486186B7099A2E8BEB188.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset'
-[2019.12.04-18.46.09:318][ 41]LogTemp: Repeating last play command: Selected Viewport
-[2019.12.04-18.46.09:336][ 41]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
-[2019.12.04-18.46.09:337][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.12.04-18.46.09:338][ 41]PIE: New page: PIE session: MainMap (4 Dec 2019 18:46:09)
-[2019.12.04-18.46.09:339][ 41]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2019.12.04-18.46.09:342][ 41]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
-[2019.12.04-18.46.09:347][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004870s)
-[2019.12.04-18.46.09:348][ 41]LogAIModule: Creating AISystem for world MainMap
-[2019.12.04-18.46.09:349][ 41]LogPlayLevel: PIE: World Init took: (0.001262s)
-[2019.12.04-18.46.09:349][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006983s)
-[2019.12.04-18.46.09:373][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
-[2019.12.04-18.46.09:431][ 41]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2019.12.04-18.46.09:444][ 41]LogInit: FAudioDevice initialized.
-[2019.12.04-18.46.09:475][ 41]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
-[2019.12.04-18.46.09:477][ 41]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-18.46.09
-[2019.12.04-18.46.09:478][ 41]LogWorld: Bringing up level for play took: 0.001280
-[2019.12.04-18.46.09:478][ 41]LogOnline: OSS: Creating online subsystem instance for: :Context_2
-[2019.12.04-18.46.09:487][ 41]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
-[2019.12.04-18.46.09:489][ 41]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap 0.173
-[2019.12.04-18.46.09:490][ 41]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
-[2019.12.04-18.46.12:415][128]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
-[2019.12.04-18.46.13:484][160]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
-[2019.12.04-18.46.15:996][235]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.12.04-18.46.16:096][238]LogBlueprintUserMessages: [HUD_C_0] Getting New Marble
-[2019.12.04-18.46.17:940][293]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
-[2019.12.04-18.46.18:406][307]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
-[2019.12.04-18.46.24:903][501]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.12.04-18.46.25:037][505]LogBlueprintUserMessages: [HUD_C_0] Getting New Marble
-[2019.12.04-18.46.26:814][558]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
-[2019.12.04-18.46.27:649][583]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
-[2019.12.04-18.46.32:069][715]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.12.04-18.46.32:169][718]LogBlueprintUserMessages: [HUD_C_0] Getting New Marble
-[2019.12.04-18.46.34:013][773]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
-[2019.12.04-18.46.34:781][796]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
-[2019.12.04-18.46.37:092][860]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.12.04-18.46.37:193][862]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
-[2019.12.04-18.46.37:194][862]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.46.37:195][862]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
-[2019.12.04-18.46.37:195][862]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
-[2019.12.04-18.46.37:268][862]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.12.04-18.46.37:269][862]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
-[2019.12.04-18.46.37:297][862]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.12.04-18.46.37:300][862]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
-[2019.12.04-18.46.37:314][863]LogPlayLevel: Display: Destroying online subsystem :Context_2
-[2019.12.04-18.46.38:526][892]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2019.12.04-18.46.38:551][892]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
-[2019.12.04-18.46.38:675][892]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMapD8F8D4A24383570785E3B98921AF93F1.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap'
-[2019.12.04-18.46.38:741][892]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap_BuiltData" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset" SILENT=true
-[2019.12.04-18.46.38:761][892]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap_BuiltData0F4108B54379699F83B87993F4F5A75B.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset'
-[2019.12.04-18.46.40:733][949]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
-[2019.12.04-18.46.40:906][949]LogSlate: Window 'Message Log' being destroyed
-[2019.12.04-18.46.40:909][949]LogSlate: Window 'Dev_Challenge_2 - Unreal Editor' being destroyed
-[2019.12.04-18.46.40:911][949]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.12.04-18.46.41:199][950]Cmd: QUIT_EDITOR
-[2019.12.04-18.46.41:888][950]LogExit: Preparing to exit.
+[2019.12.04-19.15.45:524][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:525][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.12.04-19.15.45:525][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.12.04-19.15.45:526][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.12.04-19.15.45:527][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:527][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:559][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.12.04-19.15.45:559][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.12.04-19.15.45:560][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.12.04-19.15.45:561][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.12.04-19.15.45:562][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:562][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.12.04-19.15.45:563][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.12.04-19.15.45:564][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.12.04-19.15.45:564][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.12.04-19.15.45:564][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.12.04-19.15.45:564][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.12.04-19.15.45:565][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.12.04-19.15.45:565][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.12.04-19.15.45:565][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:565][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.12.04-19.15.45:565][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.12.04-19.15.45:570][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.04-19.15.45:570][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.12.04-19.15.45:574][  0]LogHAL: Display: Platform has ~ 8 GB [8463040512 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.12.04-19.15.45:574][  0]LogInit: Going up to parent DeviceProfile []
+[2019.12.04-19.15.45:574][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.12.04-19.15.45:574][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.12.04-19.15.45:575][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.12.04-19.15.45:576][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.12.04-19.15.45:577][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.12.04-19.15.45:578][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.12.04-19.15.45:579][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Scalability.ini]
+[2019.12.04-19.15.45:579][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.12.04-19.15.45:579][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.12.04-19.15.45:579][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.12.04-19.15.45:579][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.12.04-19.15.45:579][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.12.04-19.15.45:579][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Config/Windows/Engine.ini]
+[2019.12.04-19.15.45:580][  0]LogInit: Computer: GREGOR-PC
+[2019.12.04-19.15.45:580][  0]LogInit: User: Gregor
+[2019.12.04-19.15.45:580][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.12.04-19.15.45:580][  0]LogInit: High frequency timer resolution =3.312642 MHz
+[2019.12.04-19.15.45:580][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.12.04-19.15.45:580][  0]LogMemory: Platform Memory Stats for Windows
+[2019.12.04-19.15.45:580][  0]LogMemory: Process Physical Memory: 105.20 MB used, 105.20 MB peak
+[2019.12.04-19.15.45:580][  0]LogMemory: Process Virtual Memory: 104.39 MB used, 104.39 MB peak
+[2019.12.04-19.15.45:580][  0]LogMemory: Physical Memory: 5006.82 MB used,  3064.16 MB free, 8070.98 MB total
+[2019.12.04-19.15.45:580][  0]LogMemory: Virtual Memory: 4692.12 MB used,  134213032.00 MB free, 134217728.00 MB total
+[2019.12.04-19.15.45:588][  0]LogWindows: WindowsPlatformFeatures enabled
+[2019.12.04-19.15.45:713][  0]LogInit: Using OS detected language (en-GB).
+[2019.12.04-19.15.45:713][  0]LogInit: Using OS detected locale (en-GB).
+[2019.12.04-19.15.45:715][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2019.12.04-19.15.45:935][  0]LogInit: Setting process to per monitor DPI aware
+[2019.12.04-19.15.46:021][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.12.04-19.15.46:021][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.12.04-19.15.46:473][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2019.12.04-19.15.46:473][  0]LogD3D11RHI: D3D11 adapters:
+[2019.12.04-19.15.46:549][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2019.12.04-19.15.46:550][  0]LogD3D11RHI:       8088/0/4035 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2019.12.04-19.15.46:568][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2019.12.04-19.15.46:568][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.12.04-19.15.46:574][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.12.04-19.15.46:574][  0]LogD3D11RHI:       0/0/4035 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.12.04-19.15.46:574][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.12.04-19.15.46:584][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.12.04-19.15.46:584][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2019.12.04-19.15.46:584][  0]LogWindows: EnumDisplayDevices:
+[2019.12.04-19.15.46:584][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2019.12.04-19.15.46:585][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2019.12.04-19.15.46:585][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2019.12.04-19.15.46:585][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2019.12.04-19.15.46:586][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2019.12.04-19.15.46:586][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2019.12.04-19.15.46:587][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2019.12.04-19.15.46:587][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2019.12.04-19.15.46:587][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2019.12.04-19.15.46:587][  0]LogD3D11RHI:   Driver Version: 417.71 (internal:25.21.14.1771, unified:417.71)
+[2019.12.04-19.15.46:587][  0]LogD3D11RHI:      Driver Date: 1-11-2019
+[2019.12.04-19.15.46:587][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
+[2019.12.04-19.15.46:639][  0]LogD3D11RHI: Async texture creation enabled
+[2019.12.04-19.15.46:658][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.12.04-19.15.47:164][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.12.04-19.15.47:175][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.12.04-19.15.47:186][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.12.04-19.15.47:197][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.12.04-19.15.47:209][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.12.04-19.15.47:221][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.12.04-19.15.47:232][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.12.04-19.15.47:243][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.12.04-19.15.47:250][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.12.04-19.15.47:289][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.12.04-19.15.47:290][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.12.04-19.15.47:294][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.12.04-19.15.47:320][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.12.04-19.15.47:320][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.12.04-19.15.47:337][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.12.04-19.15.47:337][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.12.04-19.15.47:347][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.12.04-19.15.47:358][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.12.04-19.15.47:370][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.12.04-19.15.47:381][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.12.04-19.15.47:411][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.12.04-19.15.47:411][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.12.04-19.15.47:411][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.12.04-19.15.47:431][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.12.04-19.15.47:533][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Intermediate/Shaders/WorkingDirectory/3900/).
+[2019.12.04-19.15.47:533][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gregor/AppData/Local/Temp/UnrealShaderWorkingDir/01DD40884568A9E9C5C35DB1EC548DAA/'.
+[2019.12.04-19.15.47:535][  0]LogXGEController: Cleaning working directory: C:/Users/Gregor/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.12.04-19.15.47:535][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.12.04-19.15.47:536][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.12.04-19.15.47:536][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.12.04-19.15.48:215][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.12.04-19.15.48:298][  0]LogDerivedDataCache: Loaded boot cache 0.08s 76MB C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2019.12.04-19.15.48:298][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
+[2019.12.04-19.15.48:299][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.12.04-19.15.48:299][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.12.04-19.15.48:299][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.12.04-19.15.48:299][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.12.04-19.15.48:311][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.12.04-19.15.48:311][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.12.04-19.15.48:311][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.12.04-19.15.48:313][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gregor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.12.04-19.15.48:313][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.12.04-19.15.48:313][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.12.04-19.15.48:334][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.12.04-19.15.48:337][  0]LogSlate: Using FreeType 2.6.0
+[2019.12.04-19.15.48:338][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.12.04-19.15.48:418][  0]LogAssetRegistry: FAssetRegistry took 0.0046 seconds to start up
+[2019.12.04-19.15.48:693][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.04-19.15.48:873][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.12.04-19.15.48:873][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.12.04-19.15.48:873][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.12.04-19.15.48:873][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.12.04-19.15.48:873][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.12.04-19.15.48:885][  0]LogNetVersion: Dev_Challenge_2 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 144850394)
+[2019.12.04-19.15.49:422][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.054589 seconds
+[2019.12.04-19.15.49:430][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
+[2019.12.04-19.15.49:430][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
+[2019.12.04-19.15.49:430][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.12.04-19.15.50:721][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.12.04-19.15.50:728][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.12.04-19.15.50:850][  0]SourceControl: Source control is disabled
+[2019.12.04-19.15.50:850][  0]SourceControl: Source control is disabled
+[2019.12.04-19.15.50:854][  0]SourceControl: Source control is disabled
+[2019.12.04-19.15.50:858][  0]SourceControl: Source control is disabled
+[2019.12.04-19.15.51:034][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.12.04-19.15.51:595][  0]LogOcInput: OculusInput pre-init called
+[2019.12.04-19.15.52:487][  0]LogEngine: Initializing Engine...
+[2019.12.04-19.15.52:543][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2019.12.04-19.15.52:544][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.12.04-19.15.52:791][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.12.04-19.15.52:807][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.12.04-19.15.52:987][  0]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.15.53:010][  0]LogInit: FAudioDevice initialized.
+[2019.12.04-19.15.53:010][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.12.04-19.15.53:178][  0]LogDerivedDataCache: Saved boot cache 0.17s 76MB C:/Users/Gregor/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2019.12.04-19.15.53:201][  0]LogInit: Texture streaming: Enabled
+[2019.12.04-19.15.53:230][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.12.04-19.15.53:230][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2019.12.04-19.15.53:231][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2019.12.04-19.15.53:294][  0]LogInit: Transaction tracking system initialized
+[2019.12.04-19.15.53:341][  0]BlueprintLog: New page: Editor Load
+[2019.12.04-19.15.53:452][  0]LocalizationService: Localization service is disabled
+[2019.12.04-19.15.53:740][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/' took 0.00s
+[2019.12.04-19.15.53:740][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.12.04-19.15.53:741][  0]LogCook: Display: Mobile HDR setting 1
+[2019.12.04-19.15.54:008][  0]SourceControl: Source control is disabled
+[2019.12.04-19.15.54:009][  0]Cmd: MAP LOAD FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.12.04-19.15.54:009][  0]LightingResults: New page: Lighting Build
+[2019.12.04-19.15.54:012][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.15.54:012][  0]MapCheck: New page: Map Check
+[2019.12.04-19.15.54:012][  0]LightingResults: New page: Lighting Build
+[2019.12.04-19.15.54:038][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2019.12.04-19.15.54:101][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:102][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:102][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:102][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:154][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:155][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
+[2019.12.04-19.15.54:155][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:155][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
+[2019.12.04-19.15.54:155][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:155][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
+[2019.12.04-19.15.54:155][  0]LogLinker: Warning: While loading '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/SphereMesh.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2019.12.04-19.15.54:155][  0]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by SphereMesh
+[2019.12.04-19.15.54:179][  0]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.15.54:186][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.12.04-19.15.54:213][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2019.12.04-19.15.54:213][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.12.04-19.15.54:214][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.1ms to complete.
+[2019.12.04-19.15.54:214][  0]LogFileHelpers: Loading map 'MainMap' took 0.205
+[2019.12.04-19.15.54:390][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.15.54:399][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.15.54:406][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.15.54:413][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.15.54:422][  0]LogCollectionManager: Loaded 0 collections in 0.002049 seconds
+[2019.12.04-19.15.54:437][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/Collections/' took 0.00s
+[2019.12.04-19.15.54:437][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Developers/Gregor/Collections/' took 0.00s
+[2019.12.04-19.15.54:437][  0]LogFileCache: Scanning file cache for directory 'E:/Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Collections/' took 0.00s
+[2019.12.04-19.15.54:437][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2019.12.04-19.15.54:446][  0]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2868 classes and 683 folders.
+[2019.12.04-19.15.54:453][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.04-19.15.54:545][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.04-19.15.54:555][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2019.12.04-19.15.54:635][  0]LogSlate: Took 0.000308 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.12.04-19.15.54:639][  0]LogSlate: Took 0.000275 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.12.04-19.15.54:653][  0]LogSlate: Took 0.000294 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.12.04-19.15.54:655][  0]LogSlate: Took 0.000237 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2019.12.04-19.15.54:767][  0]LogRenderer: Reallocating scene render targets to support 1208x640 Format 10 NumSamples 1 (Frame:1).
+[2019.12.04-19.15.54:830][  0]LogSlate: Took 0.000301 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.12.04-19.15.54:947][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.04-19.15.54:948][  0]LogLoad: (Engine Initialization) Total time: 12.63 seconds
+[2019.12.04-19.15.54:948][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.12.04-19.15.54:958][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.12.04-19.15.55:025][  0]LogAssetRegistry: Asset discovery search completed in 6.6097 seconds
+[2019.12.04-19.15.55:030][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
+[2019.12.04-19.15.55:030][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000278 seconds (updated 0 objects)
+[2019.12.04-19.15.55:031][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.12.04-19.15.55:039][  0]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2019.12.04-19.15.59:016][424]LogSlate: Took 0.000277 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.12.04-19.15.59:031][424]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/UI/FinishRound.FinishRound
+[2019.12.04-19.15.59:341][424]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 121 classes and 0 folders.
+[2019.12.04-19.16.00:556][424]LogSlate: Took 0.000302 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.12.04-19.16.02:595][465]LogSlate: Window 'FinishRound' being destroyed
+[2019.12.04-19.16.17:695][833]LogSlate: Took 0.027618 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.12.04-19.16.23:084][973]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.16.23:165][973]LogUObjectHash: Compacting FUObjectHashTables data took   5.45ms
+[2019.12.04-19.16.23:898][988]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.16.23:958][988]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound0F6C0DF14411154B27EAE995F288B323.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.16.25:446][ 30]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.16.25:486][ 30]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.16.25:486][ 30]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.16.25:487][ 30]PIE: New page: PIE session: MainMap (4 Dec 2019 19:16:25)
+[2019.12.04-19.16.25:489][ 30]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2019.12.04-19.16.25:492][ 30]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.16.25:497][ 30]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004567s)
+[2019.12.04-19.16.25:498][ 30]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.16.25:498][ 30]LogPlayLevel: PIE: World Init took: (0.001315s)
+[2019.12.04-19.16.25:499][ 30]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006830s)
+[2019.12.04-19.16.25:540][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   5.03ms
+[2019.12.04-19.16.25:598][ 30]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.16.25:613][ 30]LogInit: FAudioDevice initialized.
+[2019.12.04-19.16.25:645][ 30]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.16.25:647][ 30]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.16.25
+[2019.12.04-19.16.25:647][ 30]LogWorld: Bringing up level for play took: 0.001127
+[2019.12.04-19.16.25:648][ 30]LogOnline: OSS: Creating online subsystem instance for: :Context_4
+[2019.12.04-19.16.25:660][ 30]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 20 classes and 0 folders.
+[2019.12.04-19.16.25:662][ 30]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap 0.346
+[2019.12.04-19.16.25:663][ 30]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.16.47:163][653]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.16.47:164][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.16.47:164][653]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.16.47:164][653]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.16.47:243][653]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.16.47:244][653]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.16.47:303][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.16.47:340][653]LogUObjectHash: Compacting FUObjectHashTables data took   5.80ms
+[2019.12.04-19.16.47:359][654]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2019.12.04-19.16.54:979][865]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Debugger, SessionId={A695BA40-498A-9BBE-0E19-C386E6843B18}
+[2019.12.04-19.17.18:150][482]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.17.18:215][482]LogUObjectHash: Compacting FUObjectHashTables data took   5.43ms
+[2019.12.04-19.17.18:862][495]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.17.18:897][495]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound47796D704CB8EF4E8DDDAA991AB0FFBC.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.17.19:687][513]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.17.19:718][513]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.17.19:719][513]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.17.19:719][513]PIE: New page: PIE session: MainMap (4 Dec 2019 19:17:19)
+[2019.12.04-19.17.19:719][513]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.17.19:724][513]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004284s)
+[2019.12.04-19.17.19:725][513]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.17.19:726][513]LogPlayLevel: PIE: World Init took: (0.001333s)
+[2019.12.04-19.17.19:726][513]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006766s)
+[2019.12.04-19.17.19:761][513]LogUObjectHash: Compacting FUObjectHashTables data took   3.92ms
+[2019.12.04-19.17.19:815][513]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.17.19:829][513]LogInit: FAudioDevice initialized.
+[2019.12.04-19.17.19:854][513]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.17.19:861][513]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.17.19:867][513]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.17.19
+[2019.12.04-19.17.19:868][513]LogWorld: Bringing up level for play took: 0.001146
+[2019.12.04-19.17.19:868][513]LogOnline: OSS: Creating online subsystem instance for: :Context_5
+[2019.12.04-19.17.19:874][513]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap 0.558
+[2019.12.04-19.17.19:875][513]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.17.19:904][514]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
+[2019.12.04-19.17.34:928][812]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.17.35:264][819]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.40:511][924]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.17.47:494][ 63]LogBlueprintUserMessages: [HUD_C_0] Getting New Marble
+[2019.12.04-19.17.49:909][111]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.17.50:309][119]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.52:267][158]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.53:725][187]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.54:679][206]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.55:483][222]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.56:437][241]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.58:046][273]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.17.58:949][291]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.00:808][328]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.01:611][344]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.01:913][350]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.02:114][354]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.02:315][358]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.02:717][366]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.02:918][370]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.03:220][376]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.03:421][380]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.08:244][476]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.09:701][505]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.18.16:552][641]LogSlate: Window 'Dev_Challenge_2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.12.04-19.18.16:604][641]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.16:606][641]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.18.16:607][641]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.18.16:618][641]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.18.16:619][641]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.16:662][641]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2019.12.04-19.18.16:674][642]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.12.04-19.18.26:601][935]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.18.26:622][935]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.26:622][935]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.18.26:622][935]PIE: New page: PIE session: MainMap (4 Dec 2019 19:18:26)
+[2019.12.04-19.18.26:623][935]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.18.26:628][935]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005080s)
+[2019.12.04-19.18.26:630][935]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.18.26:641][935]LogPlayLevel: PIE: World Init took: (0.012549s)
+[2019.12.04-19.18.26:642][935]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.018721s)
+[2019.12.04-19.18.26:678][935]LogUObjectHash: Compacting FUObjectHashTables data took   3.18ms
+[2019.12.04-19.18.26:738][935]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.18.26:754][935]LogInit: FAudioDevice initialized.
+[2019.12.04-19.18.26:761][935]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.18.26:762][935]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.18.26:768][935]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.18.26
+[2019.12.04-19.18.26:768][935]LogWorld: Bringing up level for play took: 0.001239
+[2019.12.04-19.18.26:769][935]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2019.12.04-19.18.26:775][935]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap -0.542
+[2019.12.04-19.18.26:775][935]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.33:314][ 66]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.34:369][ 87]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.37:181][143]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.18.38:490][169]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.18.39:643][192]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.18.43:561][270]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.18.46:291][324]LogSlate: Window 'Dev_Challenge_2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.12.04-19.18.46:344][324]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.46:345][324]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.18.46:345][324]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.18.46:359][324]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.18.46:360][324]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.18.46:409][324]LogUObjectHash: Compacting FUObjectHashTables data took   5.45ms
+[2019.12.04-19.18.46:420][325]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.12.04-19.18.48:735][390]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.18.48:781][390]LogUObjectHash: Compacting FUObjectHashTables data took   4.21ms
+[2019.12.04-19.18.49:322][400]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.18.49:351][400]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRoundE0558B0241FC691C7F737D9AA7F4C398.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.19.00:042][712]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/UI/HUD.HUD
+[2019.12.04-19.19.04:053][815]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.19.04:121][815]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.19.35:966][584]LogSlate: Window 'Color Picker' being destroyed
+[2019.12.04-19.19.54:039][ 56]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.19.54:073][ 56]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound784576B84E8BDCE5F23CABB8312DDFC3.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.19.58:087][168]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/UI/HUD.HUD
+[2019.12.04-19.20.19:652][748]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.20.19:710][748]LogUObjectHash: Compacting FUObjectHashTables data took   6.65ms
+[2019.12.04-19.20.20:250][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.20.20:284][757]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound02A617CC4E44592CF28434B5983DE2A0.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.20.21:923][799]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.20.21:952][799]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.20.21:952][799]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.20.21:953][799]PIE: New page: PIE session: MainMap (4 Dec 2019 19:20:21)
+[2019.12.04-19.20.21:953][799]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.20.21:958][799]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005148s)
+[2019.12.04-19.20.21:960][799]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.20.21:960][799]LogPlayLevel: PIE: World Init took: (0.001571s)
+[2019.12.04-19.20.21:961][799]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.007872s)
+[2019.12.04-19.20.22:004][799]LogUObjectHash: Compacting FUObjectHashTables data took   4.50ms
+[2019.12.04-19.20.22:061][799]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.20.22:075][799]LogInit: FAudioDevice initialized.
+[2019.12.04-19.20.22:087][799]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.20.22:088][799]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.20.22
+[2019.12.04-19.20.22:089][799]LogWorld: Bringing up level for play took: 0.000965
+[2019.12.04-19.20.22:089][799]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2019.12.04-19.20.22:094][799]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap 0.777
+[2019.12.04-19.20.22:094][799]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.20.29:721][ 23]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.30:055][ 33]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.30:357][ 42]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.30:657][ 51]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.31:026][ 62]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.31:460][ 75]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.32:298][100]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.33:436][134]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.34:842][176]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.36:583][228]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.38:056][272]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.20.39:029][301]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.20.39:497][315]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.20.41:337][366]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.20.41:438][368]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.12.04-19.20.41:508][368]LogUObjectHash: Compacting FUObjectHashTables data took   4.41ms
+[2019.12.04-19.20.41:733][368]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMapF493E7A844D358F04DADCBA5AA9A3522.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap'
+[2019.12.04-19.20.41:771][368]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap_BuiltData" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset" SILENT=true
+[2019.12.04-19.20.41:802][368]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap_BuiltDataCD81093046731B102A7C95B6A2FADDB1.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset'
+[2019.12.04-19.20.43:398][411]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.20.43:399][411]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.20.43:399][411]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.20.43:399][411]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.20.43:473][411]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.20.43:473][411]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.20.43:516][411]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.20.43:522][411]LogUObjectHash: Compacting FUObjectHashTables data took   4.47ms
+[2019.12.04-19.20.43:540][412]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2019.12.04-19.20.45:402][462]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.12.04-19.20.45:442][462]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2019.12.04-19.20.45:632][462]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap140441694022E096E0D021A8C5D8E322.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap'
+[2019.12.04-19.20.45:668][462]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap_BuiltData" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset" SILENT=true
+[2019.12.04-19.20.45:686][462]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap_BuiltDataE2EBFF7C4CD3136AAEFBF1A70DA9CF30.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset'
+[2019.12.04-19.22.28:313][626]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.22.28:365][626]LogUObjectHash: Compacting FUObjectHashTables data took   7.01ms
+[2019.12.04-19.22.29:142][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.22.29:207][641]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound98D71AE94A077C25CB5A9D86A103EE2A.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.22.31:651][703]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.22.31:678][703]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.22.31:679][703]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.22.31:679][703]PIE: New page: PIE session: MainMap (4 Dec 2019 19:22:31)
+[2019.12.04-19.22.31:680][703]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.22.31:686][703]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004612s)
+[2019.12.04-19.22.31:687][703]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.22.31:688][703]LogPlayLevel: PIE: World Init took: (0.001201s)
+[2019.12.04-19.22.31:688][703]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.007750s)
+[2019.12.04-19.22.31:733][703]LogUObjectHash: Compacting FUObjectHashTables data took   5.06ms
+[2019.12.04-19.22.31:790][703]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.22.31:804][703]LogInit: FAudioDevice initialized.
+[2019.12.04-19.22.31:811][703]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.22.31:812][703]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.22.31:813][703]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.22.31
+[2019.12.04-19.22.31:817][703]LogWorld: Bringing up level for play took: 0.004170
+[2019.12.04-19.22.31:821][703]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2019.12.04-19.22.31:827][703]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap 0.51
+[2019.12.04-19.22.31:828][703]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.22.46:586][997]LogSlate: Window 'Dev_Challenge_2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.12.04-19.22.46:645][997]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.22.46:648][997]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.22.46:648][997]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.22.46:661][997]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.22.46:662][997]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.22.46:709][997]LogUObjectHash: Compacting FUObjectHashTables data took   3.85ms
+[2019.12.04-19.22.46:749][998]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2019.12.04-19.23.12:592][568]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.23.12:622][568]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.23.12:622][568]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.23.12:623][568]PIE: New page: PIE session: MainMap (4 Dec 2019 19:23:12)
+[2019.12.04-19.23.12:623][568]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.23.12:628][568]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004598s)
+[2019.12.04-19.23.12:629][568]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.23.12:630][568]LogPlayLevel: PIE: World Init took: (0.001454s)
+[2019.12.04-19.23.12:630][568]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006879s)
+[2019.12.04-19.23.12:668][568]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2019.12.04-19.23.12:727][568]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.23.12:742][568]LogInit: FAudioDevice initialized.
+[2019.12.04-19.23.12:749][568]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.23.12:749][568]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.23.12:751][568]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.23.12
+[2019.12.04-19.23.12:753][568]LogWorld: Bringing up level for play took: 0.002694
+[2019.12.04-19.23.12:755][568]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2019.12.04-19.23.12:761][568]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap -0.556
+[2019.12.04-19.23.12:761][568]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.23.14:836][610]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.23.15:183][617]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.23.19:102][695]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.23.48:774][985]LogSlate: Window 'Dev_Challenge_2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.12.04-19.23.48:861][985]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.23.48:861][985]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.23.48:862][985]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.23.48:935][985]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.23.48:935][985]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.23.49:004][985]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2019.12.04-19.23.49:099][986]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2019.12.04-19.23.55:141][127]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Debugger, SessionId={C25283B7-4F4A-4695-4C1C-3389E5E78F12}
+[2019.12.04-19.24.20:891][685]BlueprintLog: New page: Compile FinishRound
+[2019.12.04-19.24.20:942][685]LogUObjectHash: Compacting FUObjectHashTables data took   4.93ms
+[2019.12.04-19.24.21:471][695]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/FinishRound" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset" SILENT=true
+[2019.12.04-19.24.21:506][695]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/FinishRound62E6274E4EAC834183B209BD36187C5D.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/UI/FinishRound.uasset'
+[2019.12.04-19.24.22:759][730]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.04-19.24.22:787][730]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.24.22:788][730]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.04-19.24.22:788][730]PIE: New page: PIE session: MainMap (4 Dec 2019 19:24:22)
+[2019.12.04-19.24.22:788][730]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.22:792][730]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003748s)
+[2019.12.04-19.24.22:794][730]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.24.22:794][730]LogPlayLevel: PIE: World Init took: (0.001385s)
+[2019.12.04-19.24.22:794][730]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006000s)
+[2019.12.04-19.24.22:837][730]LogUObjectHash: Compacting FUObjectHashTables data took   5.92ms
+[2019.12.04-19.24.22:892][730]LogInit: XAudio2 using 'Headphones (WH-XB900N Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.12.04-19.24.22:906][730]LogInit: FAudioDevice initialized.
+[2019.12.04-19.24.22:919][730]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.24.22:921][730]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.24.22
+[2019.12.04-19.24.22:921][730]LogWorld: Bringing up level for play took: 0.001037
+[2019.12.04-19.24.22:921][730]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2019.12.04-19.24.22:926][730]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMap -0.39
+[2019.12.04-19.24.22:927][730]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.24.24:591][780]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.24.24:958][791]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.24.28:608][900]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.24.28:788][904]LogNet: Browse: /Game/Maps/MainMap
+[2019.12.04-19.24.28:788][904]LogLoad: LoadMap: /Game/Maps/MainMap
+[2019.12.04-19.24.28:788][904]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.28:815][904]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.24.28:853][904]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
+[2019.12.04-19.24.28:867][904]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.28:873][904]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004926s)
+[2019.12.04-19.24.28:874][904]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.24.28:874][904]LogPlayLevel: PIE: World Init took: (0.001416s)
+[2019.12.04-19.24.28:875][904]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.007756s)
+[2019.12.04-19.24.28:875][904]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.24.28:878][904]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.24.28
+[2019.12.04-19.24.28:878][904]LogWorld: Bringing up level for play took: 0.000961
+[2019.12.04-19.24.28:934][904]LogLoad: Took 0.146386 seconds to LoadMap(/Game/Maps/UEDPIE_0_MainMap)
+[2019.12.04-19.24.35:261][ 94]LogNet: Browse: /Game/Maps/MainMap
+[2019.12.04-19.24.35:262][ 94]LogLoad: LoadMap: /Game/Maps/MainMap
+[2019.12.04-19.24.35:262][ 94]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.35:262][ 94]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.24.35:349][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2019.12.04-19.24.35:350][ 94]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.35:355][ 94]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004470s)
+[2019.12.04-19.24.35:356][ 94]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.24.35:356][ 94]LogPlayLevel: PIE: World Init took: (0.001352s)
+[2019.12.04-19.24.35:357][ 94]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006773s)
+[2019.12.04-19.24.35:357][ 94]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.24.35:359][ 94]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.24.35
+[2019.12.04-19.24.35:360][ 94]LogWorld: Bringing up level for play took: 0.001055
+[2019.12.04-19.24.35:362][ 94]LogLoad: Took 0.100417 seconds to LoadMap(/Game/Maps/UEDPIE_0_MainMap)
+[2019.12.04-19.24.40:394][246]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.24.40:995][264]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.24.46:454][427]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.24.46:556][430]LogNet: Browse: /Game/Maps/MainMap
+[2019.12.04-19.24.46:556][430]LogLoad: LoadMap: /Game/Maps/MainMap
+[2019.12.04-19.24.46:556][430]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.46:557][430]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.24.46:640][430]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2019.12.04-19.24.46:640][430]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.46:646][430]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005117s)
+[2019.12.04-19.24.46:647][430]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.24.46:648][430]LogPlayLevel: PIE: World Init took: (0.001221s)
+[2019.12.04-19.24.46:649][430]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.008826s)
+[2019.12.04-19.24.46:649][430]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.24.46:651][430]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.24.46
+[2019.12.04-19.24.46:652][430]LogWorld: Bringing up level for play took: 0.001879
+[2019.12.04-19.24.46:655][430]LogLoad: Took 0.099255 seconds to LoadMap(/Game/Maps/UEDPIE_0_MainMap)
+[2019.12.04-19.24.48:808][496]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.24.49:074][504]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.24.53:561][638]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.24.53:695][642]LogNet: Browse: /Game/Maps/MainMap
+[2019.12.04-19.24.53:696][642]LogLoad: LoadMap: /Game/Maps/MainMap
+[2019.12.04-19.24.53:696][642]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.53:696][642]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.24.53:781][642]LogUObjectHash: Compacting FUObjectHashTables data took   3.29ms
+[2019.12.04-19.24.53:781][642]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.24.53:787][642]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004488s)
+[2019.12.04-19.24.53:788][642]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.24.53:789][642]LogPlayLevel: PIE: World Init took: (0.001734s)
+[2019.12.04-19.24.53:789][642]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.007787s)
+[2019.12.04-19.24.53:790][642]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.24.53:791][642]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.24.53
+[2019.12.04-19.24.53:792][642]LogWorld: Bringing up level for play took: 0.001045
+[2019.12.04-19.24.53:794][642]LogLoad: Took 0.098680 seconds to LoadMap(/Game/Maps/UEDPIE_0_MainMap)
+[2019.12.04-19.24.55:775][703]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Clicking Ball
+[2019.12.04-19.24.56:376][721]LogBlueprintUserMessages: [Dev_Challenge_2_PlayerController_C_0] Hitting Ball
+[2019.12.04-19.25.00:192][835]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.04-19.25.00:293][838]LogNet: Browse: /Game/Maps/MainMap
+[2019.12.04-19.25.00:293][838]LogLoad: LoadMap: /Game/Maps/MainMap
+[2019.12.04-19.25.00:294][838]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.25.00:294][838]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.00:379][838]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2019.12.04-19.25.00:379][838]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.25.00:383][838]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003982s)
+[2019.12.04-19.25.00:384][838]LogAIModule: Creating AISystem for world MainMap
+[2019.12.04-19.25.00:385][838]LogPlayLevel: PIE: World Init took: (0.001795s)
+[2019.12.04-19.25.00:385][838]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.006405s)
+[2019.12.04-19.25.00:386][838]LogLoad: Game class is 'Dev_Challenge_2_GameMode_C'
+[2019.12.04-19.25.00:387][838]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2019.12.04-19.25.00
+[2019.12.04-19.25.00:388][838]LogWorld: Bringing up level for play took: 0.001116
+[2019.12.04-19.25.00:390][838]LogLoad: Took 0.096795 seconds to LoadMap(/Game/Maps/UEDPIE_0_MainMap)
+[2019.12.04-19.25.02:186][891]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.12.04-19.25.02:255][891]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2019.12.04-19.25.02:460][891]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap35523ED9471D6419FA8FCDAEF1F2AE78.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap.umap'
+[2019.12.04-19.25.02:495][891]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMap_BuiltData" FILE="../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset" SILENT=true
+[2019.12.04-19.25.02:519][891]LogSavePackage: Moving '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Saved/MainMap_BuiltData8738D9014A5C93CEA67C0C84F99E2755.tmp' to '../../../../../../Gregor/Documents/Dev_Challenge_2.0/Dev_Challenge_2/Content/Maps/MainMap_BuiltData.uasset'
+[2019.12.04-19.25.04:391][941]LogUObjectHash: Compacting FUObjectHashTables data took   3.66ms
+[2019.12.04-19.25.04:530][941]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.04:535][941]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.04:662][941]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.04:668][941]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.04:696][941]LogSlate: Window 'Message Log' being destroyed
+[2019.12.04-19.25.04:698][941]LogSlate: Window 'Dev_Challenge_2 - Unreal Editor' being destroyed
+[2019.12.04-19.25.04:699][941]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.12.04-19.25.04:845][941]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.25.04:846][941]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.25.04:847][941]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2019.12.04-19.25.04:847][941]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.04:861][941]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.04-19.25.04:862][941]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMap.MainMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap' with GeneratedClass '/Game/Maps/MainMap.MainMap_C' with ClassGeneratedBy '/Game/Maps/MainMap.MainMap:PersistentLevel.MainMap'
+[2019.12.04-19.25.04:900][941]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.04-19.25.04:932][941]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2019.12.04-19.25.05:055][942]Cmd: QUIT_EDITOR
+[2019.12.04-19.25.05:317][942]LogExit: Preparing to exit.
+[2019.12.04-19.25.05:724][942]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.05:770][942]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2019.12.04-19.25.05:792][942]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2019.12.04-19.25.05:793][942]LogExit: Editor shut down
+[2019.12.04-19.25.05:793][942]LogExit: Transaction tracking system shut down
