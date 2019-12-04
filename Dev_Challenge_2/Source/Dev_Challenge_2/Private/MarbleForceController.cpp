@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Kismet/KismetMathLibrary.h"
+#include "Engine/Engine.h"//remove with print 
 #include "Math/UnrealMathUtility.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
@@ -12,7 +14,6 @@ AMarbleForceController::AMarbleForceController()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -24,6 +25,22 @@ void AMarbleForceController::BeginPlay()
 	APlayerController *playerController = UGameplayStatics::GetPlayerController(this, 0);
 	APlayerCameraManager *CameraManager = playerController->PlayerCameraManager;
 	cameraLocation = CameraManager->GetCameraLocation();
+}
+
+void AMarbleForceController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (marble != nullptr && marble->marbleState == marble->CHARGING)
+	{
+		FirePower = CalculateDirection().Size();
+		FirePower = UKismetMathLibrary::NormalizeToRange(FirePower, 80.0f, 1000.0f);
+		FirePower = FMath::Clamp<float>(FirePower, 0, 1);
+		GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, FString::SanitizeFloat(FirePower));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, "Marble is null");
+	}
 }
 
 FVector AMarbleForceController::CalculateDirection()
@@ -43,8 +60,8 @@ FVector AMarbleForceController::GetMousePosition()
 	PlayerController->GetMousePosition(X, Y);
 	FVector2D MousePosition(X, Y);
 	FHitResult HitResult;
-	FVector mousePos;
-	if (PlayerController->GetHitResultAtScreenPosition(MousePosition, ECC_Visibility, false, HitResult) == true)
+	FVector mousePos{0};
+	if (PlayerController->GetHitResultAtScreenPosition(MousePosition, ECC_Visibility, true, HitResult) == true)
 	{
 		mousePos = HitResult.ImpactPoint;
 	}
@@ -57,9 +74,9 @@ void AMarbleForceController::HitBall()
 {
 	if (marble->marbleState == marble->CHARGING)
 	{
-		FVector	direction = CalculateDirection();
-		float power = FMath::Clamp<float>(direction.Size()*PowerMultiplier, 1, 1000);
-		FVector forceToAdd = direction/*.GetSafeNormal()*/ * power;
+		FireDirection = CalculateDirection();
+		float power = FirePower*PowerMultiplier;
+		FVector forceToAdd = FireDirection.GetSafeNormal() * power;
 
 		//
 		float newHypotenuse = forceToAdd.X;
@@ -71,6 +88,7 @@ void AMarbleForceController::HitBall()
 			meshComp->AddImpulse(forceToAdd * meshComp->GetMass());
 		}
 		marble->marbleState = marble->FIRED;
+		FirePower = 0.0f;
 	}
 }
 

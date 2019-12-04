@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeDev_Challenge_2_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xADBA86AF,
+				0x4DE52BDE,
 				0xE12CC9DD,
 				METADATA_PARAMS(nullptr, 0)
 			};

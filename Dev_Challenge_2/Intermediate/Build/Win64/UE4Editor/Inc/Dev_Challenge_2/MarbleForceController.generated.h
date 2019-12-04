@@ -131,8 +131,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMarbleForceController); \
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleForceController_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__marble() { return STRUCT_OFFSET(AMarbleForceController, marble); } \
-	FORCEINLINE static uint32 __PPO__PowerMultiplier() { return STRUCT_OFFSET(AMarbleForceController, PowerMultiplier); } \
-	FORCEINLINE static uint32 __PPO__FireAngle() { return STRUCT_OFFSET(AMarbleForceController, FireAngle); }
+	FORCEINLINE static uint32 __PPO__PowerMultiplier() { return STRUCT_OFFSET(AMarbleForceController, PowerMultiplier); }
 
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleForceController_h_10_PROLOG

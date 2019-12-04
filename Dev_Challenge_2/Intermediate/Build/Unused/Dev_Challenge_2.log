@@ -1,22 +1,18 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Gregor\Documents\Dev_Challenge_2.0).
   Parsing headers for Dev_Challenge_2Editor
     Running UnrealHeaderTool "E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Dev_Challenge_2.uproject" "E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\Dev_Challenge_2Editor\Development\Dev_Challenge_2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for Dev_Challenge_2Editor in 7.9160404 seconds
+  Reflection code generated for Dev_Challenge_2Editor in 7.8810378 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 12 actions with 4 processes...
-    [1/12] Marble.gen.cpp
-    [2/12] MarbleForceController.gen.cpp
-    [3/12] RoundController.gen.cpp
-    [4/12] MarbleSpawnController.gen.cpp
-    [5/12] Dev_Challenge_2.init.gen.cpp
-    [6/12] MarbleSpawnController.cpp
-    [7/12] Marble.cpp
-    [8/12] MarbleForceController.cpp
-    [9/12] RoundController.cpp
-    [10/12] UE4Editor-Dev_Challenge_2.lib
+  Building 8 actions with 4 processes...
+    [1/8] Dev_Challenge_2.init.gen.cpp
+    [2/8] MarbleSpawnController.gen.cpp
+    [3/8] MarbleSpawnController.cpp
+    [4/8] MarbleForceController.gen.cpp
+    [5/8] MarbleForceController.cpp
+    [6/8] UE4Editor-Dev_Challenge_2.lib
        Creating library E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.lib and object E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.exp
-    [11/12] UE4Editor-Dev_Challenge_2.dll
+    [7/8] UE4Editor-Dev_Challenge_2.dll
        Creating library E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.suppressed.lib and object E:\Gregor\Documents\Dev_Challenge_2.0\Dev_Challenge_2\Intermediate\Build\Win64\UE4Editor\Development\Dev_Challenge_2\UE4Editor-Dev_Challenge_2.suppressed.exp
-    [12/12] Dev_Challenge_2Editor.target
-  Total time in Parallel executor: 16.04 seconds
-  Total execution time: 25.00 seconds
+    [8/8] Dev_Challenge_2Editor.target
+  Total time in Parallel executor: 11.33 seconds
+  Total execution time: 20.40 seconds

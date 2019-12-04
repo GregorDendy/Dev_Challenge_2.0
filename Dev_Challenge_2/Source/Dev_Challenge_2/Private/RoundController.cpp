@@ -24,7 +24,7 @@ void ARoundController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle);
-	GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, FString::FromInt(StaticCast<int>(GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle)+1)));
+	//GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, FString::FromInt(StaticCast<int>(GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle)+1)));
 }
 
 int32 ARoundController::GetRemainingRoundTime()

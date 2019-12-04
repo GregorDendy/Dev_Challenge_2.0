@@ -17,6 +17,7 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime);
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "Ball")
@@ -40,12 +41,18 @@ private:
 	UPROPERTY(EditAnywhere, Category = Marble)
 		float PowerMultiplier = 1.0f;
 
-	UPROPERTY(EditAnywhere, Category = Marble)
-		float FireAngle = 45.0f;
 
 	UStaticMeshComponent *meshComp;
 	FVector cameraLocation;
+	FVector FireDirection;
+
 
 	FVector GetMousePosition();
 	FVector CalculateDirection();
+
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)// Category = Marble)
+	int32 FireAngle = 35;
+	UPROPERTY(BlueprintReadOnly)
+	float FirePower;
 };
