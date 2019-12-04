@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "RoundController.h"
 #include "Components/StaticMeshComponent.h"
 #include "MarbleForceController.h"
 #include "Marble.h"
@@ -32,6 +33,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		AMarbleForceController *forceController;
+	UPROPERTY(EditAnywhere)
+		ARoundController *roundControl;
 
 	AMarble * currentMarble;
 

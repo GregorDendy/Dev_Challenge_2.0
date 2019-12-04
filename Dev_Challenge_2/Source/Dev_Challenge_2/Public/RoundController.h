@@ -26,8 +26,16 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	int32 RoundTimer{ 30 };
+	UPROPERTY(BlueprintReadOnly)
+	int32 CurrentScore;
 	
 	UFUNCTION()
 	void EndRound();
+
+	UFUNCTION(BlueprintCallable)
+	int32 GetRemainingRoundTime();
+
+	void IncreaseScore(int32 Value);
+
 	void StartTimer();
 };

@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Dev_Challenge_2();
 	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleSpawnController_GetNewMarble();
+	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_ARoundController_NoRegister();
 	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_AMarbleForceController_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -66,6 +67,10 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_roundControl_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_roundControl;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_forceController_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_forceController;
@@ -95,6 +100,13 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_roundControl_MetaData[] = {
+		{ "Category", "MarbleSpawnController" },
+		{ "ModuleRelativePath", "Public/MarbleSpawnController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_roundControl = { "roundControl", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarbleSpawnController, roundControl), Z_Construct_UClass_ARoundController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_roundControl_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_roundControl_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_forceController_MetaData[] = {
 		{ "Category", "MarbleSpawnController" },
 		{ "ModuleRelativePath", "Public/MarbleSpawnController.h" },
@@ -116,6 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_ActorToSpawn = { "ActorToSpawn", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarbleSpawnController, ActorToSpawn), Z_Construct_UClass_AMarble_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_ActorToSpawn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_ActorToSpawn_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMarbleSpawnController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_roundControl,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_forceController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_SpawnLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarbleSpawnController_Statics::NewProp_ActorToSpawn,
@@ -147,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMarbleSpawnController, 3349806945);
+	IMPLEMENT_CLASS(AMarbleSpawnController, 1094346883);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<AMarbleSpawnController>()
 	{
 		return AMarbleSpawnController::StaticClass();

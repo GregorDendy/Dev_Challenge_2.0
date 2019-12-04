@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_ARoundController_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AMarble::StaticRegisterNativesAMarble()
@@ -70,9 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "/*\n\x09UPROPERTY()\n\x09\x09USceneComponent * Root;\n\n\x09UPROPERTY()\n\x09\x09USphereComponent *SphereComponent;\n\x09*/" },
 		{ "ModuleRelativePath", "Public/Marble.h" },
-		{ "ToolTip", "UPROPERTY()\n        USceneComponent * Root;\n\nUPROPERTY()\n        USphereComponent *SphereComponent;" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMarble_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMarble, nullptr, "OnHit", nullptr, nullptr, sizeof(Marble_eventOnHit_Parms), Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams)) };
@@ -97,6 +96,10 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RoundControl_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RoundControl;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_staticMeshComp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_staticMeshComp;
@@ -109,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Dev_Challenge_2,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMarble_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMarble_OnHit, "OnHit" }, // 1085228015
+		{ &Z_Construct_UFunction_AMarble_OnHit, "OnHit" }, // 892926259
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarble_Statics::Class_MetaDataParams[] = {
@@ -117,6 +120,12 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		{ "ModuleRelativePath", "Public/Marble.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Marble.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl = { "RoundControl", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarble, RoundControl), Z_Construct_UClass_ARoundController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData[] = {
 		{ "Comment", "/*EditAnywhere, Category = MarbleMesh*/" },
@@ -127,6 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp = { "staticMeshComp", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarble, staticMeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMarble_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMarble_Statics::StaticCppClassTypeInfo = {
@@ -156,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMarble, 2911514849);
+	IMPLEMENT_CLASS(AMarble, 805571543);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<AMarble>()
 	{
 		return AMarble::StaticClass();

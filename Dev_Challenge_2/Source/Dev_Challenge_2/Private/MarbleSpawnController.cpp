@@ -25,6 +25,7 @@ void AMarbleSpawnController::SpawnMarble()
 	if (currentMarble != nullptr && forceController != nullptr)
 	{
 		forceController->SetCurrentMarble(currentMarble);
+		currentMarble->SetRoundControl(roundControl);
 	}
 }
 

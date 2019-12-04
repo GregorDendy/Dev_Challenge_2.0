@@ -18,12 +18,14 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Dev_Challenge_2();
 	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_ARoundController_EndRound();
+	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_ARoundController_GetRemainingRoundTime();
 // End Cross Module References
 	void ARoundController::StaticRegisterNativesARoundController()
 	{
 		UClass* Class = ARoundController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "EndRound", &ARoundController::execEndRound },
+			{ "GetRemainingRoundTime", &ARoundController::execGetRemainingRoundTime },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -49,6 +51,38 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics
+	{
+		struct RoundController_eventGetRemainingRoundTime_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RoundController_eventGetRemainingRoundTime_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/RoundController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARoundController, nullptr, "GetRemainingRoundTime", nullptr, nullptr, sizeof(RoundController_eventGetRemainingRoundTime_Parms), Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARoundController_GetRemainingRoundTime()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ARoundController_GetRemainingRoundTime_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ARoundController_NoRegister()
 	{
 		return ARoundController::StaticClass();
@@ -60,6 +94,10 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentScore_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_CurrentScore;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RoundTimer_MetaData[];
 #endif
@@ -74,6 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARoundController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ARoundController_EndRound, "EndRound" }, // 1911247690
+		{ &Z_Construct_UFunction_ARoundController_GetRemainingRoundTime, "GetRemainingRoundTime" }, // 1640644263
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARoundController_Statics::Class_MetaDataParams[] = {
@@ -82,6 +121,13 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARoundController_Statics::NewProp_CurrentScore_MetaData[] = {
+		{ "Category", "RoundController" },
+		{ "ModuleRelativePath", "Public/RoundController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARoundController_Statics::NewProp_CurrentScore = { "CurrentScore", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARoundController, CurrentScore), METADATA_PARAMS(Z_Construct_UClass_ARoundController_Statics::NewProp_CurrentScore_MetaData, ARRAY_COUNT(Z_Construct_UClass_ARoundController_Statics::NewProp_CurrentScore_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARoundController_Statics::NewProp_RoundTimer_MetaData[] = {
 		{ "Category", "RoundController" },
 		{ "ModuleRelativePath", "Public/RoundController.h" },
@@ -89,6 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARoundController_Statics::NewProp_RoundTimer = { "RoundTimer", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARoundController, RoundTimer), METADATA_PARAMS(Z_Construct_UClass_ARoundController_Statics::NewProp_RoundTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_ARoundController_Statics::NewProp_RoundTimer_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARoundController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoundController_Statics::NewProp_CurrentScore,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoundController_Statics::NewProp_RoundTimer,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARoundController_Statics::StaticCppClassTypeInfo = {
@@ -118,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeRoundController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARoundController, 2561963021);
+	IMPLEMENT_CLASS(ARoundController, 1788996012);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<ARoundController>()
 	{
 		return ARoundController::StaticClass();

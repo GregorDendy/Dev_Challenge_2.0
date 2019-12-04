@@ -15,6 +15,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_RoundController_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetRemainingRoundTime) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetRemainingRoundTime(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execEndRound) \
 	{ \
 		P_FINISH; \
@@ -25,6 +33,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_RoundController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetRemainingRoundTime) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetRemainingRoundTime(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execEndRound) \
 	{ \

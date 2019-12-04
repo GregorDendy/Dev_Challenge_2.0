@@ -21,15 +21,31 @@ void AMarble::BeginPlay()
 	OnActorHit.AddDynamic(this, &AMarble::OnHit);
 }
 
+//Get round controller from the 
+void AMarble::SetRoundControl(ARoundController *roundControl)
+{
+	RoundControl = roundControl;
+}
+
 void AMarble::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)
 {
-	FName tagName = FName("AAA");
-	if (OtherActor!=nullptr && OtherActor->ActorHasTag(tagName))
+	FName PositiveTag = FName("Green");
+	if (OtherActor!=nullptr && OtherActor->ActorHasTag(PositiveTag))
 	{
 		for (auto tag : OtherActor->Tags)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Yellow, tag.ToString());
 		}
+		RoundControl->IncreaseScore(5);
+	}
+	FName NegativeTag = FName("Red");
+	if (OtherActor != nullptr && OtherActor->ActorHasTag(NegativeTag))
+	{
+		for (auto tag : OtherActor->Tags)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Yellow, tag.ToString());
+		}
+		RoundControl->IncreaseScore(-2);
 	}
 
 }

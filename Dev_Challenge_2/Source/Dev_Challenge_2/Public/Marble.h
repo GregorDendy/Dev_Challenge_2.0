@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "RoundController.h"
 #include "Components/SphereComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -31,13 +32,11 @@ public:
 
 	MarbleState marbleState;
 
-	/*
+	
 	UPROPERTY()
-		USceneComponent * Root;
+	ARoundController * RoundControl;
 
-	UPROPERTY()
-		USphereComponent *SphereComponent;
-	*/
+	void SetRoundControl(ARoundController *roundControl);
 
 	UFUNCTION()
 		void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
