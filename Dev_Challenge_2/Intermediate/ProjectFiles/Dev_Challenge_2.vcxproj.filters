@@ -109,12 +109,18 @@
     <ClInclude Include="..\..\Source\Dev_Challenge_2\Public\MarbleForceController.h">
       <Filter>Source\Dev_Challenge_2\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Dev_Challenge_2\Public\RoundController.h">
+      <Filter>Source\Dev_Challenge_2\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\MarbleSpawnController.cpp">
       <Filter>Source\Dev_Challenge_2\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\MarbleForceController.cpp">
+      <Filter>Source\Dev_Challenge_2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\RoundController.cpp">
       <Filter>Source\Dev_Challenge_2\Private</Filter>
     </ClCompile>
   </ItemGroup>

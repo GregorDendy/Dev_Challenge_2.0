@@ -366,8 +366,10 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\MarbleForceController.cpp" />
     <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\MarbleSpawnController.cpp" />
+    <ClCompile Include="..\..\Source\Dev_Challenge_2\Private\RoundController.cpp" />
     <ClInclude Include="..\..\Source\Dev_Challenge_2\Public\MarbleForceController.h" />
     <ClInclude Include="..\..\Source\Dev_Challenge_2\Public\MarbleSpawnController.h" />
+    <ClInclude Include="..\..\Source\Dev_Challenge_2\Public\RoundController.h" />
     <None Include="..\..\Dev_Challenge_2.uproject" />
     <None Include="..\..\Source\Dev_Challenge_2.Target.cs" />
     <None Include="..\..\Source\Dev_Challenge_2Editor.Target.cs" />
