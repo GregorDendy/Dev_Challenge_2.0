@@ -15,6 +15,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleSpawnController_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execStartMarbleTimer) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartMarbleTimer(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetNewMarble) \
 	{ \
 		P_FINISH; \
@@ -25,6 +33,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Dev_Challenge_2_Source_Dev_Challenge_2_Public_MarbleSpawnController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execStartMarbleTimer) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartMarbleTimer(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetNewMarble) \
 	{ \

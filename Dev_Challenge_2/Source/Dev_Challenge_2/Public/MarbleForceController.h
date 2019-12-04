@@ -27,16 +27,15 @@ public:
 		bool CheckIfClickingMarble();
 
 	UFUNCTION(BlueprintCallable, Category = "Ball")
-		void SetPowerMultiplier(float value);
-
-	UFUNCTION(BlueprintCallable, Category = "Ball")
 		void SetFireAngle(float value);
 
 	void SetCurrentMarble(AMarble *newMarble);
 
 private:
 	UPROPERTY(EditAnywhere, Category = Marble)
-		AMarble* marble;
+	AMarble* marble;
+	//UPROPERTY(EditAnywhere, Category = Marble)
+	//AMarbleSpawnController* SpawnController;
 
 	UPROPERTY(EditAnywhere, Category = Marble)
 		float PowerMultiplier = 1.0f;

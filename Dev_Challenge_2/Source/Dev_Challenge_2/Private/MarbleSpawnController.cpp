@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "TimerManager.h"
 #include "Engine/World.h"
 #include "MarbleSpawnController.h"
 
@@ -35,6 +36,11 @@ void AMarbleSpawnController::DestroyMarble()
 	{
 		currentMarble->Destroy();
 	}
+}
+
+void AMarbleSpawnController::StartMarbleTimer()
+{
+	GetWorldTimerManager().SetTimer(MarbleTimerHandle, this, &AMarbleSpawnController::GetNewMarble, 4.0f, false);
 }
 
 //Remove old marble and get new one

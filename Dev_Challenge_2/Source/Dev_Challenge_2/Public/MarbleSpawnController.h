@@ -3,7 +3,7 @@
 #pragma once
 
 #include "RoundController.h"
-#include "Components/StaticMeshComponent.h"
+//#include "Components/StaticMeshComponent.h"
 #include "MarbleForceController.h"
 #include "Marble.h"
 #include "CoreMinimal.h"
@@ -40,4 +40,9 @@ public:
 
 	void SpawnMarble();
 	void DestroyMarble();
+
+	UFUNCTION(BlueprintCallable)
+	void StartMarbleTimer();
+private:
+	FTimerHandle MarbleTimerHandle;
 };

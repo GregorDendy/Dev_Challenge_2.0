@@ -24,15 +24,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetPowerMultiplier) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPowerMultiplier(Z_Param_value); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execCheckIfClickingMarble) \
 	{ \
 		P_FINISH; \
@@ -58,15 +49,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetFireAngle(Z_Param_value); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetPowerMultiplier) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPowerMultiplier(Z_Param_value); \
 		P_NATIVE_END; \
 	} \
  \

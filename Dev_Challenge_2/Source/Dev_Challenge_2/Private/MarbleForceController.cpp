@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Kismet/KismetMathLibrary.h"
-#include "Engine/Engine.h"//remove with print 
+#include "Kismet/KismetMathLibrary.h" 
 #include "Math/UnrealMathUtility.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
@@ -35,11 +34,6 @@ void AMarbleForceController::Tick(float DeltaTime)
 		FirePower = CalculateDirection().Size();
 		FirePower = UKismetMathLibrary::NormalizeToRange(FirePower, 80.0f, 1000.0f);
 		FirePower = FMath::Clamp<float>(FirePower, 0, 1);
-		GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, FString::SanitizeFloat(FirePower));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, "Marble is null");
 	}
 }
 
@@ -89,6 +83,7 @@ void AMarbleForceController::HitBall()
 		}
 		marble->marbleState = marble->FIRED;
 		FirePower = 0.0f;
+		//SpawnController->StartMarbleTimer();
 	}
 }
 
@@ -106,8 +101,6 @@ bool AMarbleForceController::CheckIfClickingMarble()
 		bool ClickedMarble = hitActor->ActorHasTag("marble");
 		if (ClickedMarble && marble != nullptr)
 		{
-			//TArray<UStaticMeshComponent> StaticComps;
-			//hitActor->GetComponents<UStaticMeshComponent>(StaticComps);
 			meshComp = (marble->FindComponentByClass<UStaticMeshComponent>());
 			if (marble->marbleState == marble->READY)
 			{
@@ -117,11 +110,6 @@ bool AMarbleForceController::CheckIfClickingMarble()
 		}
 	}
 	return false;
-}
-
-void AMarbleForceController::SetPowerMultiplier(float value)
-{
-	PowerMultiplier = value;
 }
 
 void AMarbleForceController::SetFireAngle(float value)

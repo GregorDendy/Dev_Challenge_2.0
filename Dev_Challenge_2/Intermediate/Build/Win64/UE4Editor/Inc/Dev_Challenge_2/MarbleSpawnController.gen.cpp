@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Dev_Challenge_2();
 	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleSpawnController_GetNewMarble();
+	DEV_CHALLENGE_2_API UFunction* Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer();
 	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_ARoundController_NoRegister();
 	DEV_CHALLENGE_2_API UClass* Z_Construct_UClass_AMarbleForceController_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -29,6 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 		UClass* Class = AMarbleSpawnController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetNewMarble", &AMarbleSpawnController::execGetNewMarble },
+			{ "StartMarbleTimer", &AMarbleSpawnController::execStartMarbleTimer },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -52,6 +54,28 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMarbleSpawnController_GetNewMarble_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/MarbleSpawnController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMarbleSpawnController, nullptr, "StartMarbleTimer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -92,6 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMarbleSpawnController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMarbleSpawnController_GetNewMarble, "GetNewMarble" }, // 2775926509
+		{ &Z_Construct_UFunction_AMarbleSpawnController_StartMarbleTimer, "StartMarbleTimer" }, // 2345537507
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarbleSpawnController_Statics::Class_MetaDataParams[] = {
@@ -160,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeMarbleSpawnController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMarbleSpawnController, 1094346883);
+	IMPLEMENT_CLASS(AMarbleSpawnController, 1348095750);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<AMarbleSpawnController>()
 	{
 		return AMarbleSpawnController::StaticClass();
