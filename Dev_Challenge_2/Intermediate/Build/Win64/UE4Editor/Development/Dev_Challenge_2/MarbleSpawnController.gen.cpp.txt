@@ -6,10 +6,6 @@ e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\source\dev_challenge_2\pub
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\intermediate\build\win64\ue4editor\inc\dev_challenge_2\RoundController.generated.h
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\source\dev_challenge_2\public\MarbleForceController.h
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\source\dev_challenge_2\public\Marble.h
-E:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
-E:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-E:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-E:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\intermediate\build\win64\ue4editor\inc\dev_challenge_2\Marble.generated.h
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\intermediate\build\win64\ue4editor\inc\dev_challenge_2\MarbleForceController.generated.h
 e:\gregor\documents\dev_challenge_2.0\dev_challenge_2\intermediate\build\win64\ue4editor\inc\dev_challenge_2\MarbleSpawnController.generated.h

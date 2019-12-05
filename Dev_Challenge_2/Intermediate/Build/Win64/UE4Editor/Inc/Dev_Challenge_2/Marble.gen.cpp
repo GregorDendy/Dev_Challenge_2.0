@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		{ "ModuleRelativePath", "Public/Marble.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMarble_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMarble, nullptr, "OnHit", nullptr, nullptr, sizeof(Marble_eventOnHit_Parms), Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMarble_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMarble, nullptr, "OnHit", nullptr, nullptr, sizeof(Marble_eventOnHit_Parms), Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C40401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMarble_OnHit_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AMarble_OnHit()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Dev_Challenge_2,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMarble_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMarble_OnHit, "OnHit" }, // 892926259
+		{ &Z_Construct_UFunction_AMarble_OnHit, "OnHit" }, // 3281791229
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarble_Statics::Class_MetaDataParams[] = {
@@ -125,13 +125,11 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		{ "ModuleRelativePath", "Public/Marble.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl = { "RoundControl", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarble, RoundControl), Z_Construct_UClass_ARoundController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl = { "RoundControl", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarble, RoundControl), Z_Construct_UClass_ARoundController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarble_Statics::NewProp_RoundControl_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData[] = {
-		{ "Comment", "/*EditAnywhere, Category = MarbleMesh*/" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Marble.h" },
-		{ "ToolTip", "EditAnywhere, Category = MarbleMesh" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp = { "staticMeshComp", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMarble, staticMeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMarble_Statics::NewProp_staticMeshComp_MetaData)) };
@@ -166,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeMarble() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMarble, 805571543);
+	IMPLEMENT_CLASS(AMarble, 4132586837);
 	template<> DEV_CHALLENGE_2_API UClass* StaticClass<AMarble>()
 	{
 		return AMarble::StaticClass();

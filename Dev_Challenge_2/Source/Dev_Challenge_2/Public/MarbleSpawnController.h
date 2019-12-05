@@ -3,7 +3,6 @@
 #pragma once
 
 #include "RoundController.h"
-//#include "Components/StaticMeshComponent.h"
 #include "MarbleForceController.h"
 #include "Marble.h"
 #include "CoreMinimal.h"
@@ -15,34 +14,34 @@ class DEV_CHALLENGE_2_API AMarbleSpawnController : public AActor
 {
 	GENERATED_BODY()
 	
-public:
-	AMarbleSpawnController();
-	UPROPERTY(EditDefaultsOnly, Category = "SpawnObject")
-		TSubclassOf<AMarble> ActorToSpawn;
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
 public:
-	UPROPERTY(EditAnywhere)
-		FVector SpawnLocation;
+	AMarbleSpawnController();
+	UPROPERTY(EditDefaultsOnly, Category = "SpawnObject")
+	TSubclassOf<AMarble> ActorToSpawn;
+
+	UPROPERTY(EditDefaultsOnly)
+	FVector SpawnLocation;
 
 	UFUNCTION(BlueprintCallable, Category = "MarbleSpawn")
-		void GetNewMarble();
+	void GetNewMarble();
 
 	UPROPERTY(EditAnywhere)
-		AMarbleForceController *forceController;
+	AMarbleForceController *forceController;
+
 	UPROPERTY(EditAnywhere)
-		ARoundController *roundControl;
-
-	AMarble * currentMarble;
-
-	void SpawnMarble();
-	void DestroyMarble();
+	ARoundController *roundControl;
 
 	UFUNCTION(BlueprintCallable)
 	void StartMarbleTimer();
 private:
+	void SpawnMarble();
+
+	void DestroyMarble();
+
+	AMarble *currentMarble;
+
 	FTimerHandle MarbleTimerHandle;
 };

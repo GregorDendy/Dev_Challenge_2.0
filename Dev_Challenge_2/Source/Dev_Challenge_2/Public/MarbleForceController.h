@@ -31,14 +31,17 @@ public:
 
 	void SetCurrentMarble(AMarble *newMarble);
 
-private:
-	UPROPERTY(EditAnywhere, Category = Marble)
-	AMarble* marble;
-	//UPROPERTY(EditAnywhere, Category = Marble)
-	//AMarbleSpawnController* SpawnController;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Marble")
+	int32 FireAngle = 35;
+	UPROPERTY(BlueprintReadOnly)
+	float FirePower;
 
-	UPROPERTY(EditAnywhere, Category = Marble)
-		float PowerMultiplier = 1.0f;
+private:
+	UPROPERTY(EditAnywhere, Category = "Marble")
+	AMarble* marble;
+
+	UPROPERTY(EditAnywhere, Category = "Marble")
+	float PowerMultiplier = 1.0f;
 
 
 	UStaticMeshComponent *meshComp;
@@ -48,10 +51,4 @@ private:
 
 	FVector GetMousePosition();
 	FVector CalculateDirection();
-
-public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)// Category = Marble)
-	int32 FireAngle = 35;
-	UPROPERTY(BlueprintReadOnly)
-	float FirePower;
 };

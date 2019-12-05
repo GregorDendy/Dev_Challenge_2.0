@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Engine/Engine.h"//remove with print 
 #include "TimerManager.h"
 #include "RoundController.h"
 
@@ -19,34 +18,29 @@ void ARoundController::BeginPlay()
 	StartTimer();
 }
 
-// Called every frame
-void ARoundController::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-	//GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle);
-	//GEngine->AddOnScreenDebugMessage(1, 1, FColor::Cyan, FString::FromInt(StaticCast<int>(GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle)+1)));
-}
-
+//To display on UI
 int32 ARoundController::GetRemainingRoundTime()
 {
-	return StaticCast<int>(GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle) + 1);
+	return StaticCast<int>(GetWorldTimerManager().GetTimerRemaining(RoundTimerHandle) + 1);//add one so number shows correctly
 }
 
 void ARoundController::IncreaseScore(int32 Value)
 {
+	if (RoundRunning)
+	{
 		CurrentScore += Value;
+	}
 }
 
 void ARoundController::StartTimer()
 {
 	RoundRunning = true;
 	GetWorldTimerManager().SetTimer(RoundTimerHandle, this, &ARoundController::EndRound, RoundTimer, false);
-	GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Red, "Timer Started");
 }
 
 void ARoundController::EndRound()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Red, "Timer Ended");
+	//Bool controls end screen UI
 	RoundRunning = false;
 }
 

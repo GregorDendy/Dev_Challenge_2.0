@@ -26,6 +26,7 @@ void AMarbleForceController::BeginPlay()
 	cameraLocation = CameraManager->GetCameraLocation();
 }
 
+//Calculate power on tick to update the power bar on UI
 void AMarbleForceController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -83,7 +84,6 @@ void AMarbleForceController::HitBall()
 		}
 		marble->marbleState = marble->FIRED;
 		FirePower = 0.0f;
-		//SpawnController->StartMarbleTimer();
 	}
 }
 
@@ -98,7 +98,7 @@ bool AMarbleForceController::CheckIfClickingMarble()
 	if (PlayerController->GetHitResultAtScreenPosition(MousePosition, ECC_Visibility, false, HitResult) == true)
 	{
 		AActor *hitActor = HitResult.GetActor();
-		bool ClickedMarble = hitActor->ActorHasTag("marble");
+		bool ClickedMarble = hitActor->ActorHasTag("Marble");
 		if (ClickedMarble && marble != nullptr)
 		{
 			meshComp = (marble->FindComponentByClass<UStaticMeshComponent>());

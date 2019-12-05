@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Components/StaticMeshComponent.h"
-#include "Engine/Engine.h"
 #include "Marble.h"
 
 // Sets default values
@@ -21,31 +20,29 @@ void AMarble::BeginPlay()
 	OnActorHit.AddDynamic(this, &AMarble::OnHit);
 }
 
-//Get round controller from the 
+//Get round controller from the marble spawner so can change score
 void AMarble::SetRoundControl(ARoundController *roundControl)
 {
 	RoundControl = roundControl;
 }
 
+//Score changes based on object hit
 void AMarble::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)
 {
-	FName PositiveTag = FName("Green");
-	if (OtherActor!=nullptr && OtherActor->ActorHasTag(PositiveTag))
+	if (OtherActor!=nullptr && OtherActor->ActorHasTag("Green"))
 	{
-		for (auto tag : OtherActor->Tags)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Yellow, tag.ToString());
-		}
-		RoundControl->IncreaseScore(5);
+		RoundControl->IncreaseScore(1);
+		OtherActor->Destroy();
 	}
-	FName NegativeTag = FName("Red");
-	if (OtherActor != nullptr && OtherActor->ActorHasTag(NegativeTag))
+	if (OtherActor != nullptr && OtherActor->ActorHasTag("Blue"))
 	{
-		for (auto tag : OtherActor->Tags)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 4, FColor::Yellow, tag.ToString());
-		}
+		RoundControl->IncreaseScore(5);
+		OtherActor->Destroy();
+	}
+	if (OtherActor != nullptr && OtherActor->ActorHasTag("Red"))
+	{
 		RoundControl->IncreaseScore(-2);
+		OtherActor->Destroy();
 	}
 
 }

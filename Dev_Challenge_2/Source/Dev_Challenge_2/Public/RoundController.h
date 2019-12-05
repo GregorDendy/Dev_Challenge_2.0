@@ -20,16 +20,13 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-	FTimerHandle RoundTimerHandle;
+	UPROPERTY(EditAnywhere, Category = "RoundSettings")
+	int32 RoundTimer;
 
-	UPROPERTY(EditAnywhere)
-	int32 RoundTimer{ 30 };
 	UPROPERTY(BlueprintReadOnly)
 	int32 CurrentScore;
 	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite)
 	bool RoundRunning;
 
 	UFUNCTION()
@@ -38,8 +35,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	int32 GetRemainingRoundTime();
 
-	void IncreaseScore(int32 Value);
-
 	UFUNCTION(BlueprintCallable)
 	void StartTimer();
+
+	void IncreaseScore(int32 Value);
+
+private:
+	FTimerHandle RoundTimerHandle;
 };

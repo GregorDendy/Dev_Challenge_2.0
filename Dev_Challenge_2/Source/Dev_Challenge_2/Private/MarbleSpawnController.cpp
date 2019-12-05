@@ -9,7 +9,6 @@ AMarbleSpawnController::AMarbleSpawnController()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 void AMarbleSpawnController::BeginPlay()
@@ -38,9 +37,10 @@ void AMarbleSpawnController::DestroyMarble()
 	}
 }
 
+//Timer that spawns new marble
 void AMarbleSpawnController::StartMarbleTimer()
 {
-	GetWorldTimerManager().SetTimer(MarbleTimerHandle, this, &AMarbleSpawnController::GetNewMarble, 4.0f, false);
+	GetWorldTimerManager().SetTimer(MarbleTimerHandle, this, &AMarbleSpawnController::GetNewMarble, 5.0f, false);
 }
 
 //Remove old marble and get new one

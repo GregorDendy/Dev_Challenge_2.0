@@ -3,7 +3,6 @@
 #pragma once
 
 #include "RoundController.h"
-#include "Components/SphereComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Marble.generated.h"
@@ -18,7 +17,7 @@ public:
 	AMarble();
 	virtual void BeginPlay();
 
-	UPROPERTY(/*EditAnywhere, Category = MarbleMesh*/)
+	UPROPERTY()
 	UStaticMeshComponent *staticMeshComp;
 
 public:
@@ -32,11 +31,11 @@ public:
 
 	MarbleState marbleState;
 
-	
+	void SetRoundControl(ARoundController *roundControl);
+
+private:
 	UPROPERTY()
 	ARoundController * RoundControl;
-
-	void SetRoundControl(ARoundController *roundControl);
 
 	UFUNCTION()
 		void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
